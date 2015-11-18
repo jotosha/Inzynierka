@@ -1,0 +1,11 @@
+#search-field{
+    position:relative;
+    left: -110px;
+    width: 500px;
+}
+#kategoria-field{
+    width: 200px;
+}
+#Szukaj{
+    width: 250px;
+}

@@ -143,7 +143,9 @@ class NoweOgloszenie extends AbstractType
                         'class' => 'checkbox-inline'
                     )
                 ))
-                ->add('dodatkoweinformacje', 'textarea');
+                ->add('dodatkoweinformacje', 'textarea', array(
+
+                ));
 
 
     }

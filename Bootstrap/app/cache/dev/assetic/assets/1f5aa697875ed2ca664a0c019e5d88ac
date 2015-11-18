@@ -1,0 +1,8 @@
+#search-field{
+    position:relative;
+    left: 0px;
+    width: 500px;
+}
+#Szukaj{
+    width: 250px;
+}

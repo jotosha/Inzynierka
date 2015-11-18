@@ -1,0 +1,6 @@
+#search_field{
+    width: 100px;
+}
+#Szukaj{
+    width: 250px;
+}
