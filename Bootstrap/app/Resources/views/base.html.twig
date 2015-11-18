@@ -2,8 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        <title>{% block title %}Cztery Œciany{% endblock %}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -23,13 +22,13 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="{{ path('StronaGlowna') }}">Cztery Sciany</a>
+                    <a class="navbar-brand" href="{{ path('StronaGlowna') }}">Cztery Œciany</a>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="{{ path('NoweOgloszenie') }}">DODAJ OGLOSZENIE</a></li>
-                        <li><a href="#pricing">PROFIL</a></li>
-                        <li><a href="#contact">ZALOGUJ</a></li>
+                        <li><a href="#">PROFIL</a></li>
+                        <li><a href="{{ path('Login') }}">ZALOGUJ</a></li>
                     </ul>
                 </div>
             </div>

@@ -11,15 +11,14 @@ class __TwigTemplate_341815fe94b64619489ffd1f7ddc2a4efc1a81cbc6f23d0fcabdc6b81f7
 
         $this->blocks = array(
             'title' => array($this, 'block_title'),
-            'stylesheets' => array($this, 'block_stylesheets'),
             'body' => array($this, 'block_body'),
         );
     }
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_b367586b8ee4f5b7067b4d456b718c8609fe8001f50ce7fbf4c6a8be45d0b238 = $this->env->getExtension("native_profiler");
-        $__internal_b367586b8ee4f5b7067b4d456b718c8609fe8001f50ce7fbf4c6a8be45d0b238->enter($__internal_b367586b8ee4f5b7067b4d456b718c8609fe8001f50ce7fbf4c6a8be45d0b238_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "base.html.twig"));
+        $__internal_6b461697fa54986bf4ecddf75a881640f42c9bfdb49f860ae6c6818e2e4ca59f = $this->env->getExtension("native_profiler");
+        $__internal_6b461697fa54986bf4ecddf75a881640f42c9bfdb49f860ae6c6818e2e4ca59f->enter($__internal_6b461697fa54986bf4ecddf75a881640f42c9bfdb49f860ae6c6818e2e4ca59f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "base.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -30,20 +29,16 @@ class __TwigTemplate_341815fe94b64619489ffd1f7ddc2a4efc1a81cbc6f23d0fcabdc6b81f7
         // line 5
         $this->displayBlock('title', $context, $blocks);
         echo "</title>
-        ";
-        // line 6
-        $this->displayBlock('stylesheets', $context, $blocks);
-        // line 7
-        echo "        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
+        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
         <link rel=\"stylesheet\" href=\"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css\">
         <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js\"></script>
         <script src=\"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js\"></script>
         ";
-        // line 11
+        // line 10
         if (isset($context['assetic']['debug']) && $context['assetic']['debug']) {
             // asset "0c961fa_0"
             $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_0c961fa_0") : $this->env->getExtension('asset')->getAssetUrl("_controller/css/0c961fa_part_1_style_1.css");
-            // line 12
+            // line 11
             echo "        <link rel=\"stylesheet\" href=\"";
             echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
             echo "\" />
@@ -57,13 +52,13 @@ class __TwigTemplate_341815fe94b64619489ffd1f7ddc2a4efc1a81cbc6f23d0fcabdc6b81f7
         ";
         }
         unset($context["asset_url"]);
-        // line 14
+        // line 13
         echo "    </head>
     <body>
     ";
-        // line 16
+        // line 15
         $this->displayBlock('body', $context, $blocks);
-        // line 17
+        // line 16
         echo "
         <nav class=\"navbar navbar-default navbar-fixed-top\">
             <div class=\"container\">
@@ -74,18 +69,21 @@ class __TwigTemplate_341815fe94b64619489ffd1f7ddc2a4efc1a81cbc6f23d0fcabdc6b81f7
                         <span class=\"icon-bar\"></span>
                     </button>
                     <a class=\"navbar-brand\" href=\"";
-        // line 26
+        // line 25
         echo $this->env->getExtension('routing')->getPath("StronaGlowna");
-        echo "\">Cztery Sciany</a>
+        echo "\">Cztery Œciany</a>
                 </div>
                 <div class=\"collapse navbar-collapse\" id=\"myNavbar\">
                     <ul class=\"nav navbar-nav navbar-right\">
                         <li><a href=\"";
-        // line 30
+        // line 29
         echo $this->env->getExtension('routing')->getPath("NoweOgloszenie");
         echo "\">DODAJ OGLOSZENIE</a></li>
-                        <li><a href=\"#pricing\">PROFIL</a></li>
-                        <li><a href=\"#contact\">ZALOGUJ</a></li>
+                        <li><a href=\"#\">PROFIL</a></li>
+                        <li><a href=\"";
+        // line 31
+        echo $this->env->getExtension('routing')->getPath("Login");
+        echo "\">ZALOGUJ</a></li>
                     </ul>
                 </div>
             </div>
@@ -106,41 +104,30 @@ class __TwigTemplate_341815fe94b64619489ffd1f7ddc2a4efc1a81cbc6f23d0fcabdc6b81f7
 </html>
 ";
         
-        $__internal_b367586b8ee4f5b7067b4d456b718c8609fe8001f50ce7fbf4c6a8be45d0b238->leave($__internal_b367586b8ee4f5b7067b4d456b718c8609fe8001f50ce7fbf4c6a8be45d0b238_prof);
+        $__internal_6b461697fa54986bf4ecddf75a881640f42c9bfdb49f860ae6c6818e2e4ca59f->leave($__internal_6b461697fa54986bf4ecddf75a881640f42c9bfdb49f860ae6c6818e2e4ca59f_prof);
 
     }
 
     // line 5
     public function block_title($context, array $blocks = array())
     {
-        $__internal_a0a982a25252243925c7ee0e729ae033e8af1cdf7abf745ca39f2879c3bed79e = $this->env->getExtension("native_profiler");
-        $__internal_a0a982a25252243925c7ee0e729ae033e8af1cdf7abf745ca39f2879c3bed79e->enter($__internal_a0a982a25252243925c7ee0e729ae033e8af1cdf7abf745ca39f2879c3bed79e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_c3b30eb18a30651b5a1a6c57a2d327d0c7a92a2ff4367e02371a8de16ac3dd24 = $this->env->getExtension("native_profiler");
+        $__internal_c3b30eb18a30651b5a1a6c57a2d327d0c7a92a2ff4367e02371a8de16ac3dd24->enter($__internal_c3b30eb18a30651b5a1a6c57a2d327d0c7a92a2ff4367e02371a8de16ac3dd24_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Welcome!";
+        echo "Cztery Œciany";
         
-        $__internal_a0a982a25252243925c7ee0e729ae033e8af1cdf7abf745ca39f2879c3bed79e->leave($__internal_a0a982a25252243925c7ee0e729ae033e8af1cdf7abf745ca39f2879c3bed79e_prof);
+        $__internal_c3b30eb18a30651b5a1a6c57a2d327d0c7a92a2ff4367e02371a8de16ac3dd24->leave($__internal_c3b30eb18a30651b5a1a6c57a2d327d0c7a92a2ff4367e02371a8de16ac3dd24_prof);
 
     }
 
-    // line 6
-    public function block_stylesheets($context, array $blocks = array())
-    {
-        $__internal_5a79b2c425489f676646cf9e84e33647bf7e4f87ae75e927bba217c02df3a37e = $this->env->getExtension("native_profiler");
-        $__internal_5a79b2c425489f676646cf9e84e33647bf7e4f87ae75e927bba217c02df3a37e->enter($__internal_5a79b2c425489f676646cf9e84e33647bf7e4f87ae75e927bba217c02df3a37e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
-
-        
-        $__internal_5a79b2c425489f676646cf9e84e33647bf7e4f87ae75e927bba217c02df3a37e->leave($__internal_5a79b2c425489f676646cf9e84e33647bf7e4f87ae75e927bba217c02df3a37e_prof);
-
-    }
-
-    // line 16
+    // line 15
     public function block_body($context, array $blocks = array())
     {
-        $__internal_0f5c821df4d7cc1d6da48f6b5e3b96e51ec4e099e16d9e743855d229304c09c9 = $this->env->getExtension("native_profiler");
-        $__internal_0f5c821df4d7cc1d6da48f6b5e3b96e51ec4e099e16d9e743855d229304c09c9->enter($__internal_0f5c821df4d7cc1d6da48f6b5e3b96e51ec4e099e16d9e743855d229304c09c9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_7b398c0ff718af1c1988f99cf12281102d47ff7928fd471807a5611d34204297 = $this->env->getExtension("native_profiler");
+        $__internal_7b398c0ff718af1c1988f99cf12281102d47ff7928fd471807a5611d34204297->enter($__internal_7b398c0ff718af1c1988f99cf12281102d47ff7928fd471807a5611d34204297_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         
-        $__internal_0f5c821df4d7cc1d6da48f6b5e3b96e51ec4e099e16d9e743855d229304c09c9->leave($__internal_0f5c821df4d7cc1d6da48f6b5e3b96e51ec4e099e16d9e743855d229304c09c9_prof);
+        $__internal_7b398c0ff718af1c1988f99cf12281102d47ff7928fd471807a5611d34204297->leave($__internal_7b398c0ff718af1c1988f99cf12281102d47ff7928fd471807a5611d34204297_prof);
 
     }
 
@@ -156,15 +143,14 @@ class __TwigTemplate_341815fe94b64619489ffd1f7ddc2a4efc1a81cbc6f23d0fcabdc6b81f7
 
     public function getDebugInfo()
     {
-        return array (  137 => 16,  126 => 6,  114 => 5,  85 => 30,  78 => 26,  67 => 17,  65 => 16,  61 => 14,  47 => 12,  43 => 11,  37 => 7,  35 => 6,  31 => 5,  25 => 1,);
+        return array (  124 => 15,  112 => 5,  85 => 31,  80 => 29,  73 => 25,  62 => 16,  60 => 15,  56 => 13,  42 => 11,  38 => 10,  30 => 5,  24 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
 /* <html>*/
 /*     <head>*/
 /*         <meta charset="UTF-8" />*/
-/*         <title>{% block title %}Welcome!{% endblock %}</title>*/
-/*         {% block stylesheets %}{% endblock %}*/
+/*         <title>{% block title %}Cztery Œciany{% endblock %}</title>*/
 /*         <meta name="viewport" content="width=device-width, initial-scale=1">*/
 /*         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">*/
 /*         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>*/
@@ -184,13 +170,13 @@ class __TwigTemplate_341815fe94b64619489ffd1f7ddc2a4efc1a81cbc6f23d0fcabdc6b81f7
 /*                         <span class="icon-bar"></span>*/
 /*                         <span class="icon-bar"></span>*/
 /*                     </button>*/
-/*                     <a class="navbar-brand" href="{{ path('StronaGlowna') }}">Cztery Sciany</a>*/
+/*                     <a class="navbar-brand" href="{{ path('StronaGlowna') }}">Cztery Œciany</a>*/
 /*                 </div>*/
 /*                 <div class="collapse navbar-collapse" id="myNavbar">*/
 /*                     <ul class="nav navbar-nav navbar-right">*/
 /*                         <li><a href="{{ path('NoweOgloszenie') }}">DODAJ OGLOSZENIE</a></li>*/
-/*                         <li><a href="#pricing">PROFIL</a></li>*/
-/*                         <li><a href="#contact">ZALOGUJ</a></li>*/
+/*                         <li><a href="#">PROFIL</a></li>*/
+/*                         <li><a href="{{ path('Login') }}">ZALOGUJ</a></li>*/
 /*                     </ul>*/
 /*                 </div>*/
 /*             </div>*/

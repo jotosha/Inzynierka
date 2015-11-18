@@ -54,6 +54,19 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
             }
 
+            if (0 === strpos($pathinfo, '/css/6794198')) {
+                // _assetic_6794198
+                if ($pathinfo === '/css/6794198.css') {
+                    return array (  '_controller' => 'assetic.controller:render',  'name' => 6794198,  'pos' => NULL,  '_format' => 'css',  '_route' => '_assetic_6794198',);
+                }
+
+                // _assetic_6794198_0
+                if ($pathinfo === '/css/6794198_login_1.css') {
+                    return array (  '_controller' => 'assetic.controller:render',  'name' => 6794198,  'pos' => 0,  '_format' => 'css',  '_route' => '_assetic_6794198_0',);
+                }
+
+            }
+
             if (0 === strpos($pathinfo, '/css/15e01ef')) {
                 // _assetic_15e01ef
                 if ($pathinfo === '/css/15e01ef.css') {
@@ -172,6 +185,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
         // StronaGlowna
         if ($pathinfo === '/StronaGlowna') {
             return array (  '_controller' => 'AppBundle\\Controller\\GlownaController::newAction',  '_route' => 'StronaGlowna',);
+        }
+
+        // Login
+        if ($pathinfo === '/Login') {
+            return array (  '_controller' => 'AppBundle\\Controller\\LoginController::newAction',  '_route' => 'Login',);
         }
 
         // NoweOgloszenie
