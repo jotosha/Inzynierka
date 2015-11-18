@@ -21,20 +21,20 @@ class __TwigTemplate_058188b5ae8d254b5797facaa1b4ea74bd98734eb12f339b08825a81d59
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_385136c705a0652b4011de659237fff5ba86207bce89a78e03f9a358642c4f97 = $this->env->getExtension("native_profiler");
-        $__internal_385136c705a0652b4011de659237fff5ba86207bce89a78e03f9a358642c4f97->enter($__internal_385136c705a0652b4011de659237fff5ba86207bce89a78e03f9a358642c4f97_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":Szablony:glowna.html.twig"));
+        $__internal_384546c82ea2715547987b6c9766c3bcc54112c8d61e72c1a1b5363d8196b5cd = $this->env->getExtension("native_profiler");
+        $__internal_384546c82ea2715547987b6c9766c3bcc54112c8d61e72c1a1b5363d8196b5cd->enter($__internal_384546c82ea2715547987b6c9766c3bcc54112c8d61e72c1a1b5363d8196b5cd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":Szablony:glowna.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_385136c705a0652b4011de659237fff5ba86207bce89a78e03f9a358642c4f97->leave($__internal_385136c705a0652b4011de659237fff5ba86207bce89a78e03f9a358642c4f97_prof);
+        $__internal_384546c82ea2715547987b6c9766c3bcc54112c8d61e72c1a1b5363d8196b5cd->leave($__internal_384546c82ea2715547987b6c9766c3bcc54112c8d61e72c1a1b5363d8196b5cd_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_93bb78c85a706482f5087784a9e8f96c60195e2d08163cb4087a21db304bd550 = $this->env->getExtension("native_profiler");
-        $__internal_93bb78c85a706482f5087784a9e8f96c60195e2d08163cb4087a21db304bd550->enter($__internal_93bb78c85a706482f5087784a9e8f96c60195e2d08163cb4087a21db304bd550_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_1521e951d23a325d21febf370d4ed10bb1f066e9703ca1fba9e7101731918796 = $this->env->getExtension("native_profiler");
+        $__internal_1521e951d23a325d21febf370d4ed10bb1f066e9703ca1fba9e7101731918796->enter($__internal_1521e951d23a325d21febf370d4ed10bb1f066e9703ca1fba9e7101731918796_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "    ";
@@ -139,7 +139,7 @@ class __TwigTemplate_058188b5ae8d254b5797facaa1b4ea74bd98734eb12f339b08825a81d59
                     <div class=\"form group\">
                         ";
         // line 47
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "metraz", array()), 'label', array("label_attr" => array("class" => "col-md-1 control-label"), "label" => "Metraz: "));
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "metraz", array()), 'label', array("label_attr" => array("class" => "col-md-1 control-label"), "label" => "Metraż: "));
         echo "
                         <div class=\"col-sm-1\">
                             ";
@@ -168,6 +168,8 @@ class __TwigTemplate_058188b5ae8d254b5797facaa1b4ea74bd98734eb12f339b08825a81d59
 
     <div id=\"map\" style=\"height:400px;width:100%;\"></div>
     <!-- Add Google Maps -->
+
+
     <script src=\"http://maps.googleapis.com/maps/api/js\"></script>
     <script>
         function initialize() {
@@ -184,7 +186,7 @@ class __TwigTemplate_058188b5ae8d254b5797facaa1b4ea74bd98734eb12f339b08825a81d59
 
 ";
         
-        $__internal_93bb78c85a706482f5087784a9e8f96c60195e2d08163cb4087a21db304bd550->leave($__internal_93bb78c85a706482f5087784a9e8f96c60195e2d08163cb4087a21db304bd550_prof);
+        $__internal_1521e951d23a325d21febf370d4ed10bb1f066e9703ca1fba9e7101731918796->leave($__internal_1521e951d23a325d21febf370d4ed10bb1f066e9703ca1fba9e7101731918796_prof);
 
     }
 
@@ -249,7 +251,7 @@ class __TwigTemplate_058188b5ae8d254b5797facaa1b4ea74bd98734eb12f339b08825a81d59
 /*                         </div>*/
 /*                     </div>*/
 /*                     <div class="form group">*/
-/*                         {{ form_label(form.metraz, 'Metraz: ', {'label_attr': {'class': 'col-md-1 control-label'}}) }}*/
+/*                         {{ form_label(form.metraz, 'Metraż: ', {'label_attr': {'class': 'col-md-1 control-label'}}) }}*/
 /*                         <div class="col-sm-1">*/
 /*                             {{ form_widget(form.metraz, {'attr': {'class':'form-control'}}) }}*/
 /*                             {{ form_errors(form.metraz) }}*/
@@ -268,6 +270,8 @@ class __TwigTemplate_058188b5ae8d254b5797facaa1b4ea74bd98734eb12f339b08825a81d59
 /* */
 /*     <div id="map" style="height:400px;width:100%;"></div>*/
 /*     <!-- Add Google Maps -->*/
+/* */
+/* */
 /*     <script src="http://maps.googleapis.com/maps/api/js"></script>*/
 /*     <script>*/
 /*         function initialize() {*/
