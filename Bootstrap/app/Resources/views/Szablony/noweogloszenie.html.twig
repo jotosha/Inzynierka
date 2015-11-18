@@ -1,0 +1,244 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {% stylesheets '@AppBundle/Resources/css/noweogloszenie.css*' filter='cssrewrite' %}
+    <link rel="stylesheet" href="{{ asset_url }}" />
+    {% endstylesheets %}
+    {% form_theme form 'bootstrap_3_layout.html.twig' %}
+
+    <div class="container" >
+        <div class="row">
+            {{ form_start(form, {'attr': {'class': 'form-horizontal style-form', 'role': 'form'}}) }}
+            <h3 class="">Podstawowe informacje</h3>
+            <div class="col-xs-6">
+                    <div class="form-group">
+                            {{ form_label(form.wolneod, 'Wolne od:', {'label_attr': {'class': 'col-md-4 control-label'}}) }}
+                            <div class="col-sm-4">
+                                {{ form_widget(form.wolneod, {'attr': {'class':'form-control'}}) }}
+                                {{ form_errors(form.wolneod) }}
+                            </div>
+                    </div>
+                    <div class="form-group">
+                    {{ form_label(form.miasto, 'Typ budynku:', {'label_attr': {'class': 'col-md-4 control-label'}}) }}
+                        <div class="col-sm-4">
+                            {{ form_widget(form.miasto, {'attr': {'class':'form-control'}}) }}
+                            {{ form_errors(form.miasto) }}
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        {{ form_label(form.dzielnica, 'Dzielnica:', {'label_attr': {'class': 'col-md-4 control-label'}}) }}
+                        <div class="col-sm-4">
+                            {{ form_widget(form.dzielnica, {'attr': {'class':'form-control'}}) }}
+                            {{ form_errors(form.dzielnica) }}
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        {{ form_label(form.ulica, 'Ulica:', {'label_attr': {'class': 'col-md-4 control-label'}}) }}
+                        <div class="col-sm-4">
+                            {{ form_widget(form.ulica, {'attr': {'class':'form-control'}}) }}
+                            {{ form_errors(form.ulica) }}
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        {{ form_label(form.typstancji, 'Typ stancji:', {'label_attr': {'class': 'col-md-4 control-label'}}) }}
+                        <div class="col-sm-4">
+                            {{ form_widget(form.typstancji, {'attr': {'class':'form-control'}}) }}
+                            {{ form_errors(form.typstancji) }}
+                        </div>
+                    </div>
+            </div>
+
+            <div class="col-xs-6">
+                <div class="form-group">
+                    {{ form_label(form.typbudynku, 'Typ budynku:', {'label_attr': {'class': 'col-md-4 control-label'}}) }}
+                    <div class="col-sm-4">
+                        {{ form_widget(form.typbudynku, {'attr': {'class':'form-control'}}) }}
+                        {{ form_errors(form.typbudynku) }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    {{ form_label(form.liczbapokoi, 'Liczba pokoi:', {'label_attr': {'class': 'col-md-4 control-label'}}) }}
+                    <div class="col-sm-4">
+                        {{ form_widget(form.liczbapokoi, {'attr': {'class':'form-control'}}) }}
+                        {{ form_errors(form.liczbapokoi) }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    {{ form_label(form.maksliczbaosob, 'Maksymalna liczba osob:', {'label_attr': {'class': 'col-md-4 control-label'}}) }}
+                    <div class="col-sm-4">
+                        {{ form_widget(form.maksliczbaosob, {'attr': {'class':'form-control'}}) }}
+                        {{ form_errors(form.maksliczbaosob) }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    {{ form_label(form.metraz, 'Metraz:', {'label_attr': {'class': 'col-md-4 control-label'}}) }}
+                    <div class="col-sm-4">
+                        {{ form_widget(form.metraz, {'attr': {'class':'form-control'}}) }}
+                        {{ form_errors(form.metraz) }}
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-8">
+                <div class="row">
+                    <h3 class="">Wyposazenie</h3>
+                    <div class="row">
+                        <div class="col-sm-2">
+                        {{ form_label(form.internet, 'Internet:', {'label_attr': {'class': ''}}) }}
+                        {{ form_widget(form.internet, {'attr': {'class':''}}) }}
+                        {{ form_errors(form.internet) }}
+                        </div>
+                        <div class="col-sm-2">
+                        {{ form_label(form.telefon, 'Telefon:', {'label_attr': {'class': ''}}) }}
+                        {{ form_widget(form.telefon, {'attr': {'class':''}}) }}
+                        {{ form_errors(form.telefon) }}
+                        </div>
+                        <div class="col-sm-2">
+                        {{ form_label(form.telewizor, 'Telewizor:', {'label_attr': {'class': ''}}) }}
+                        {{ form_widget(form.telewizor, {'attr': {'class':''}}) }}
+                        {{ form_errors(form.telewizor) }}
+                        </div>
+                        <div class="col-sm-2">
+                        {{ form_label(form.kablowka, 'Kablowka:', {'label_attr': {'class': ''}}) }}
+                        {{ form_widget(form.kablowka, {'attr': {'class':''}}) }}
+                        {{ form_errors(form.kablowka) }}
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-2">
+                        {{ form_label(form.pralka, 'Pralka:', {'label_attr': {'class': ''}}) }}
+                        {{ form_widget(form.pralka, {'attr': {'class':''}}) }}
+                        {{ form_errors(form.pralka) }}
+                        </div>
+                        <div class="col-sm-2">
+                        {{ form_label(form.lodowka, 'Lodowka:', {'label_attr': {'class': ''}}) }}
+                        {{ form_widget(form.lodowka, {'attr': {'class':''}}) }}
+                        {{ form_errors(form.lodowka) }}
+                        </div>
+                        <div class="col-sm-2">
+                        {{ form_label(form.prysznic, 'Prysznic:', {'label_attr': {'class': ''}}) }}
+                        {{ form_widget(form.prysznic, {'attr': {'class':''}}) }}
+                        {{ form_errors(form.prysznic) }}
+                        </div>
+                        <div class="col-sm-2">
+                        {{ form_label(form.wanna, 'Wanna:', {'label_attr': {'class': ''}}) }}
+                        {{ form_widget(form.wanna, {'attr': {'class':''}}) }}
+                        {{ form_errors(form.wanna) }}
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-2">
+                        {{ form_label(form.balkon, 'Balkon:', {'label_attr': {'class': ''}}) }}
+                        {{ form_widget(form.balkon, {'attr': {'class':''}}) }}
+                        {{ form_errors(form.balkon) }}
+                        </div>
+                        <div class="col-sm-2">
+                        {{ form_label(form.taras, 'Taras:', {'label_attr': {'class': ''}}) }}
+                        {{ form_widget(form.taras, {'attr': {'class':''}}) }}
+                        {{ form_errors(form.taras) }}
+                        </div>
+                        <div class="col-sm-2">
+                        {{ form_label(form.parking, 'Parking:', {'label_attr': {'class': ''}}) }}
+                        {{ form_widget(form.parking, {'attr': {'class':''}}) }}
+                        {{ form_errors(form.parking) }}
+                        </div>
+                        <div class="col-sm-2">
+                        {{ form_label(form.garaz, 'Garaz:', {'label_attr': {'class': ''}}) }}
+                        {{ form_widget(form.garaz, {'attr': {'class':''}}) }}
+                        {{ form_errors(form.garaz) }}
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-xs-6">
+                <div class="row">
+                <h3 class="">Oplaty</h3>
+                <div class="form-group">
+                    {{ form_label(form.cenazamiesiac, 'Cena za miesiac:', {'label_attr': {'class': 'col-md-4 control-label'}}) }}
+                    <div class="col-sm-4">
+                        {{ form_widget(form.cenazamiesiac, {'attr': {'class':'form-control'}}) }}
+                        {{ form_errors(form.cenazamiesiac) }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    {{ form_label(form.dodatkoweoplaty, 'Dodatkowe oplaty:', {'label_attr': {'class': 'col-md-4 control-label'}}) }}
+                    <div class="col-sm-4">
+                        {{ form_widget(form.dodatkoweoplaty, {'attr': {'class':'form-control'}}) }}
+                        {{ form_errors(form.dodatkoweoplaty) }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    {{ form_label(form.kaucja, 'Kaucja:', {'label_attr': {'class': 'col-md-4 control-label'}}) }}
+                    <div class="col-sm-4">
+                        {{ form_widget(form.kaucja, {'attr': {'class':'form-control'}}) }}
+                        {{ form_errors(form.kaucja) }}
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6">
+                <div class="row">
+                    <h3 class="">Preferencje</h3>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            {{ form_label(form.kobiety, 'Kobiety:', {'label_attr': {'class': ''}}) }}
+                            {{ form_widget(form.kobiety, {'attr': {'class':''}}) }}
+                            {{ form_errors(form.kobiety) }}
+                        </div>
+                        <div class="col-sm-3">
+                            {{ form_label(form.mezczyzni, 'Mezczyzni:', {'label_attr': {'class': ''}}) }}
+                            {{ form_widget(form.mezczyzni, {'attr': {'class':''}}) }}
+                            {{ form_errors(form.mezczyzni) }}
+                        </div>
+                        <div class="col-sm-3">
+                            {{ form_label(form.palacy, 'Palacy:', {'label_attr': {'class': ''}}) }}
+                            {{ form_widget(form.palacy, {'attr': {'class':''}}) }}
+                            {{ form_errors(form.palacy) }}
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-3">
+                            {{ form_label(form.studenci, 'Studenci:', {'label_attr': {'class': ''}}) }}
+                            {{ form_widget(form.studenci, {'attr': {'class':''}}) }}
+                            {{ form_errors(form.studenci) }}
+                        </div>
+                        <div class="col-sm-3">
+                            {{ form_label(form.pary, 'Pary:', {'label_attr': {'class': ''}}) }}
+                            {{ form_widget(form.pary, {'attr': {'class':''}}) }}
+                            {{ form_errors(form.pary) }}
+                        </div>
+                        <div class="col-sm-3">
+                            {{ form_label(form.pracujacy, 'Pracujacy:', {'label_attr': {'class': ''}}) }}
+                            {{ form_widget(form.pracujacy, {'attr': {'id':''}}) }}
+                            {{ form_errors(form.pracujacy) }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-8">
+                <div class="row">
+                    <h3>Dodatkowe informacje:</h3>
+                    <div class="form-group">
+                        {{ form_label(form.dodatkoweinformacje, ' ', {'label_attr': {'class': 'col-md-4 control-label'}}) }}
+                        <div class="col-sm-6">
+                            {{ form_widget(form.dodatkoweinformacje, {'attr': {'class':'form-control'}}) }}
+                            {{ form_errors(form.dodatkoweinformacje) }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {{ form_end(form) }}
+        </div>
+    </div>
+
+
+
+
+{% endblock %}
