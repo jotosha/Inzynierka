@@ -79,7 +79,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xs-7">
+        </div>
+        <div class="row">
+            <div class="col-xs-6">
                 <div class="row">
                     <h3 class="">Wyposazenie</h3>
                     <div class="row">
@@ -156,22 +158,22 @@
 
 
 
-            <div class="col-xs-5">
+            <div class="col-xs-6">
                 <div class="row">
                     <p></p>
                     <h3 class="">Preferencje</h3>
                     <div class="row">
-                        <div class="col-sm-3">
+                        <div class="col-sm-2">
                             {{ form_label(form.kobiety, 'Kobiety:', {'label_attr': {'class': ''}}) }}
                             {{ form_widget(form.kobiety, {'attr': {'class':''}}) }}
                             {{ form_errors(form.kobiety) }}
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-2">
                             {{ form_label(form.mezczyzni, 'Mezczyzni:', {'label_attr': {'class': ''}}) }}
                             {{ form_widget(form.mezczyzni, {'attr': {'class':''}}) }}
                             {{ form_errors(form.mezczyzni) }}
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-2">
                             {{ form_label(form.palacy, 'Palacy:', {'label_attr': {'class': ''}}) }}
                             {{ form_widget(form.palacy, {'attr': {'class':''}}) }}
                             {{ form_errors(form.palacy) }}
@@ -179,17 +181,17 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-sm-3">
+                        <div class="col-sm-2">
                             {{ form_label(form.studenci, 'Studenci:', {'label_attr': {'class': ''}}) }}
                             {{ form_widget(form.studenci, {'attr': {'class':''}}) }}
                             {{ form_errors(form.studenci) }}
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-2">
                             {{ form_label(form.pary, 'Pary:', {'label_attr': {'class': ''}}) }}
                             {{ form_widget(form.pary, {'attr': {'class':''}}) }}
                             {{ form_errors(form.pary) }}
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-2">
                             {{ form_label(form.pracujacy, 'Pracujacy:', {'label_attr': {'class': ''}}) }}
                             {{ form_widget(form.pracujacy, {'attr': {'id':''}}) }}
                             {{ form_errors(form.pracujacy) }}
@@ -197,8 +199,9 @@
                     </div>
                 </div>
             </div>
-
-            <div class="col-xs-7">
+            </div>
+        <div class="row">
+            <div class="col-xs-6">
                 <div class="row">
                 <h3 class="">Oplaty</h3>
                 <div class="form-group">
@@ -225,16 +228,25 @@
                 </div>
             </div>
 
-            <div class="col-xs-5">
+
+            <div class="col-xs-6">
                 <div class="row">
                     <h3>Dodatkowe informacje:</h3>
-                    <div class="form-group">
-                        {{ form_label(form.dodatkoweinformacje, ' ', {'label_attr': {'class': 'col-md-4 control-label'}}) }}
-                        <div class="col-sm-6">
-                            {{ form_widget(form.dodatkoweinformacje, {'attr': {'class':'form-control'}}) }}
-                            {{ form_errors(form.dodatkoweinformacje) }}
+                        <div class="form-group">
+                            {{ form_label(form.dodatkoweinformacje, ' ', {'label_attr': {'class': 'col-md-4 control-label'}}) }}
+                            <div class="col-sm-6">
+                                {{ form_widget(form.dodatkoweinformacje, {'attr': {'class':'form-control'}}) }}
+                                {{ form_errors(form.dodatkoweinformacje) }}
+                            </div>
                         </div>
-                    </div>
+
+                </div>
+            </div>
+        </div>
+
+            <div class="col-xs-6">
+                <div class="row">
+                    <h3 class="">Galeria</h3>
                 </div>
             </div>
 

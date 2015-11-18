@@ -18,8 +18,8 @@ class __TwigTemplate_341815fe94b64619489ffd1f7ddc2a4efc1a81cbc6f23d0fcabdc6b81f7
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_ba74a7a6c5d8de7ce1e105c37a4969e6660ecd60105f3efe87150c1b8f324872 = $this->env->getExtension("native_profiler");
-        $__internal_ba74a7a6c5d8de7ce1e105c37a4969e6660ecd60105f3efe87150c1b8f324872->enter($__internal_ba74a7a6c5d8de7ce1e105c37a4969e6660ecd60105f3efe87150c1b8f324872_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "base.html.twig"));
+        $__internal_b367586b8ee4f5b7067b4d456b718c8609fe8001f50ce7fbf4c6a8be45d0b238 = $this->env->getExtension("native_profiler");
+        $__internal_b367586b8ee4f5b7067b4d456b718c8609fe8001f50ce7fbf4c6a8be45d0b238->enter($__internal_b367586b8ee4f5b7067b4d456b718c8609fe8001f50ce7fbf4c6a8be45d0b238_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "base.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -60,7 +60,7 @@ class __TwigTemplate_341815fe94b64619489ffd1f7ddc2a4efc1a81cbc6f23d0fcabdc6b81f7
         // line 14
         echo "    </head>
     <body>
-        ";
+    ";
         // line 16
         $this->displayBlock('body', $context, $blocks);
         // line 17
@@ -91,58 +91,56 @@ class __TwigTemplate_341815fe94b64619489ffd1f7ddc2a4efc1a81cbc6f23d0fcabdc6b81f7
             </div>
         </nav>
 
-        <footer class=\"text-center\">
-            <a class=\"up-arrow\" href=\"#myPage\" data-toggle=\"tooltip\" title=\"TO TOP\">
-                <span class=\"glyphicon glyphicon-chevron-up\"></span>
-            </a><br><br>
-            <p>Bootstrap Theme Made By <a href=\"http://www.w3schools.com\" data-toggle=\"tooltip\" title=\"Visit w3schools\">www.w3schools.com</a></p>
-        </footer>
-
-        <script>
-            \$(document).ready(function(){
-                // Initialize Tooltip
-                \$('[data-toggle=\"tooltip\"]').tooltip();
-            })
-        </script>
+        <div class=\"footer navbar-default navbar-fixed-bottom\" id=\"footer\">
+            <footer class=\"container\" >
+                <div class=\"collapse navbar-collapse\" id=\"myNavbar\">
+                    <ul class=\"nav navbar-nav navbar-right\">
+                        <li><a href=\"#\">Regulamin</a></li>
+                        <li><a href=\"#\">Polityka prywatnosci</a></li>
+                        <li><a href=\"#\">Kontakt</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
     </body>
 </html>
 ";
         
-        $__internal_ba74a7a6c5d8de7ce1e105c37a4969e6660ecd60105f3efe87150c1b8f324872->leave($__internal_ba74a7a6c5d8de7ce1e105c37a4969e6660ecd60105f3efe87150c1b8f324872_prof);
+        $__internal_b367586b8ee4f5b7067b4d456b718c8609fe8001f50ce7fbf4c6a8be45d0b238->leave($__internal_b367586b8ee4f5b7067b4d456b718c8609fe8001f50ce7fbf4c6a8be45d0b238_prof);
 
     }
 
     // line 5
     public function block_title($context, array $blocks = array())
     {
-        $__internal_e67773c64db18e55a68f275bdb1b88806ff39765c55b4eae36acadef6a6d38f4 = $this->env->getExtension("native_profiler");
-        $__internal_e67773c64db18e55a68f275bdb1b88806ff39765c55b4eae36acadef6a6d38f4->enter($__internal_e67773c64db18e55a68f275bdb1b88806ff39765c55b4eae36acadef6a6d38f4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_a0a982a25252243925c7ee0e729ae033e8af1cdf7abf745ca39f2879c3bed79e = $this->env->getExtension("native_profiler");
+        $__internal_a0a982a25252243925c7ee0e729ae033e8af1cdf7abf745ca39f2879c3bed79e->enter($__internal_a0a982a25252243925c7ee0e729ae033e8af1cdf7abf745ca39f2879c3bed79e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo "Welcome!";
         
-        $__internal_e67773c64db18e55a68f275bdb1b88806ff39765c55b4eae36acadef6a6d38f4->leave($__internal_e67773c64db18e55a68f275bdb1b88806ff39765c55b4eae36acadef6a6d38f4_prof);
+        $__internal_a0a982a25252243925c7ee0e729ae033e8af1cdf7abf745ca39f2879c3bed79e->leave($__internal_a0a982a25252243925c7ee0e729ae033e8af1cdf7abf745ca39f2879c3bed79e_prof);
 
     }
 
     // line 6
     public function block_stylesheets($context, array $blocks = array())
     {
-        $__internal_0477a834122150fabbcf76a39cf422409856c4d5339474b6334dd4e3a768a40b = $this->env->getExtension("native_profiler");
-        $__internal_0477a834122150fabbcf76a39cf422409856c4d5339474b6334dd4e3a768a40b->enter($__internal_0477a834122150fabbcf76a39cf422409856c4d5339474b6334dd4e3a768a40b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_5a79b2c425489f676646cf9e84e33647bf7e4f87ae75e927bba217c02df3a37e = $this->env->getExtension("native_profiler");
+        $__internal_5a79b2c425489f676646cf9e84e33647bf7e4f87ae75e927bba217c02df3a37e->enter($__internal_5a79b2c425489f676646cf9e84e33647bf7e4f87ae75e927bba217c02df3a37e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
         
-        $__internal_0477a834122150fabbcf76a39cf422409856c4d5339474b6334dd4e3a768a40b->leave($__internal_0477a834122150fabbcf76a39cf422409856c4d5339474b6334dd4e3a768a40b_prof);
+        $__internal_5a79b2c425489f676646cf9e84e33647bf7e4f87ae75e927bba217c02df3a37e->leave($__internal_5a79b2c425489f676646cf9e84e33647bf7e4f87ae75e927bba217c02df3a37e_prof);
 
     }
 
     // line 16
     public function block_body($context, array $blocks = array())
     {
-        $__internal_cce024d5307e2bacbbf1566c0bd5f47d65e9438b73de40c84ecf0835ed4fb9f8 = $this->env->getExtension("native_profiler");
-        $__internal_cce024d5307e2bacbbf1566c0bd5f47d65e9438b73de40c84ecf0835ed4fb9f8->enter($__internal_cce024d5307e2bacbbf1566c0bd5f47d65e9438b73de40c84ecf0835ed4fb9f8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_0f5c821df4d7cc1d6da48f6b5e3b96e51ec4e099e16d9e743855d229304c09c9 = $this->env->getExtension("native_profiler");
+        $__internal_0f5c821df4d7cc1d6da48f6b5e3b96e51ec4e099e16d9e743855d229304c09c9->enter($__internal_0f5c821df4d7cc1d6da48f6b5e3b96e51ec4e099e16d9e743855d229304c09c9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         
-        $__internal_cce024d5307e2bacbbf1566c0bd5f47d65e9438b73de40c84ecf0835ed4fb9f8->leave($__internal_cce024d5307e2bacbbf1566c0bd5f47d65e9438b73de40c84ecf0835ed4fb9f8_prof);
+        $__internal_0f5c821df4d7cc1d6da48f6b5e3b96e51ec4e099e16d9e743855d229304c09c9->leave($__internal_0f5c821df4d7cc1d6da48f6b5e3b96e51ec4e099e16d9e743855d229304c09c9_prof);
 
     }
 
@@ -158,7 +156,7 @@ class __TwigTemplate_341815fe94b64619489ffd1f7ddc2a4efc1a81cbc6f23d0fcabdc6b81f7
 
     public function getDebugInfo()
     {
-        return array (  139 => 16,  128 => 6,  116 => 5,  85 => 30,  78 => 26,  67 => 17,  65 => 16,  61 => 14,  47 => 12,  43 => 11,  37 => 7,  35 => 6,  31 => 5,  25 => 1,);
+        return array (  137 => 16,  126 => 6,  114 => 5,  85 => 30,  78 => 26,  67 => 17,  65 => 16,  61 => 14,  47 => 12,  43 => 11,  37 => 7,  35 => 6,  31 => 5,  25 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -176,7 +174,7 @@ class __TwigTemplate_341815fe94b64619489ffd1f7ddc2a4efc1a81cbc6f23d0fcabdc6b81f7
 /*         {% endstylesheets %}*/
 /*     </head>*/
 /*     <body>*/
-/*         {% block body %}{% endblock %}*/
+/*     {% block body %}{% endblock %}*/
 /* */
 /*         <nav class="navbar navbar-default navbar-fixed-top">*/
 /*             <div class="container">*/
@@ -198,19 +196,17 @@ class __TwigTemplate_341815fe94b64619489ffd1f7ddc2a4efc1a81cbc6f23d0fcabdc6b81f7
 /*             </div>*/
 /*         </nav>*/
 /* */
-/*         <footer class="text-center">*/
-/*             <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">*/
-/*                 <span class="glyphicon glyphicon-chevron-up"></span>*/
-/*             </a><br><br>*/
-/*             <p>Bootstrap Theme Made By <a href="http://www.w3schools.com" data-toggle="tooltip" title="Visit w3schools">www.w3schools.com</a></p>*/
-/*         </footer>*/
-/* */
-/*         <script>*/
-/*             $(document).ready(function(){*/
-/*                 // Initialize Tooltip*/
-/*                 $('[data-toggle="tooltip"]').tooltip();*/
-/*             })*/
-/*         </script>*/
+/*         <div class="footer navbar-default navbar-fixed-bottom" id="footer">*/
+/*             <footer class="container" >*/
+/*                 <div class="collapse navbar-collapse" id="myNavbar">*/
+/*                     <ul class="nav navbar-nav navbar-right">*/
+/*                         <li><a href="#">Regulamin</a></li>*/
+/*                         <li><a href="#">Polityka prywatnosci</a></li>*/
+/*                         <li><a href="#">Kontakt</a></li>*/
+/*                     </ul>*/
+/*                 </div>*/
+/*             </footer>*/
+/*         </div>*/
 /*     </body>*/
 /* </html>*/
 /* */

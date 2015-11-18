@@ -13,7 +13,7 @@
         {% endstylesheets %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+    {% block body %}{% endblock %}
 
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
@@ -35,18 +35,16 @@
             </div>
         </nav>
 
-        <footer class="text-center">
-            <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
-                <span class="glyphicon glyphicon-chevron-up"></span>
-            </a><br><br>
-            <p>Bootstrap Theme Made By <a href="http://www.w3schools.com" data-toggle="tooltip" title="Visit w3schools">www.w3schools.com</a></p>
-        </footer>
-
-        <script>
-            $(document).ready(function(){
-                // Initialize Tooltip
-                $('[data-toggle="tooltip"]').tooltip();
-            })
-        </script>
+        <div class="footer navbar-default navbar-fixed-bottom" id="footer">
+            <footer class="container" >
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Regulamin</a></li>
+                        <li><a href="#">Polityka prywatnosci</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
     </body>
 </html>
