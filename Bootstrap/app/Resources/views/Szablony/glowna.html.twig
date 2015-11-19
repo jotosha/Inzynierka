@@ -44,7 +44,7 @@
                         </div>
                     </div>
                     <div class="form group">
-                        {{ form_label(form.metraz, 'Metraz: ', {'label_attr': {'class': 'col-md-1 control-label'}}) }}
+                        {{ form_label(form.metraz, 'Metraż: ', {'label_attr': {'class': 'col-md-1 control-label'}}) }}
                         <div class="col-sm-1">
                             {{ form_widget(form.metraz, {'attr': {'class':'form-control'}}) }}
                             {{ form_errors(form.metraz) }}
@@ -63,6 +63,8 @@
 
     <div id="map" style="height:400px;width:100%;"></div>
     <!-- Add Google Maps -->
+
+
     <script src="http://maps.googleapis.com/maps/api/js"></script>
     <script>
         function initialize() {

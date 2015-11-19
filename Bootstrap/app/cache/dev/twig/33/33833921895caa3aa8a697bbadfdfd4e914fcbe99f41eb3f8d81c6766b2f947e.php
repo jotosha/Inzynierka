@@ -21,20 +21,20 @@ class __TwigTemplate_1bbfb16285a714c0aa63f92ba1cdc442d9d9821b931cbb6d7b53691e939
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_d0bb0b8d15ef6950d7547522e57d296d4e07a9db1de9e1fe43c1bdad73df04fc = $this->env->getExtension("native_profiler");
-        $__internal_d0bb0b8d15ef6950d7547522e57d296d4e07a9db1de9e1fe43c1bdad73df04fc->enter($__internal_d0bb0b8d15ef6950d7547522e57d296d4e07a9db1de9e1fe43c1bdad73df04fc_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":Szablony:noweogloszenie.html.twig"));
+        $__internal_ef2b0f151240ae4bf9f6ed1cacd46b07198e6fc7cf65076deacaae95ba9c1851 = $this->env->getExtension("native_profiler");
+        $__internal_ef2b0f151240ae4bf9f6ed1cacd46b07198e6fc7cf65076deacaae95ba9c1851->enter($__internal_ef2b0f151240ae4bf9f6ed1cacd46b07198e6fc7cf65076deacaae95ba9c1851_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":Szablony:noweogloszenie.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_d0bb0b8d15ef6950d7547522e57d296d4e07a9db1de9e1fe43c1bdad73df04fc->leave($__internal_d0bb0b8d15ef6950d7547522e57d296d4e07a9db1de9e1fe43c1bdad73df04fc_prof);
+        $__internal_ef2b0f151240ae4bf9f6ed1cacd46b07198e6fc7cf65076deacaae95ba9c1851->leave($__internal_ef2b0f151240ae4bf9f6ed1cacd46b07198e6fc7cf65076deacaae95ba9c1851_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_13e773902cfdbc69d289a88fe3e0f8a6aab539a211893791946713639347efd4 = $this->env->getExtension("native_profiler");
-        $__internal_13e773902cfdbc69d289a88fe3e0f8a6aab539a211893791946713639347efd4->enter($__internal_13e773902cfdbc69d289a88fe3e0f8a6aab539a211893791946713639347efd4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_350fe1fd13baeb4c2346bfc8cb2a4f76b4b4c72f9b62bd38f187ec68787904dd = $this->env->getExtension("native_profiler");
+        $__internal_350fe1fd13baeb4c2346bfc8cb2a4f76b4b4c72f9b62bd38f187ec68787904dd->enter($__internal_350fe1fd13baeb4c2346bfc8cb2a4f76b4b4c72f9b62bd38f187ec68787904dd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "    ";
@@ -60,91 +60,103 @@ class __TwigTemplate_1bbfb16285a714c0aa63f92ba1cdc442d9d9821b931cbb6d7b53691e939
         $this->env->getExtension('form')->renderer->setTheme((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), array(0 => "bootstrap_3_layout.html.twig"));
         // line 8
         echo "
+
     <div class=\"container\" >
+
         ";
-        // line 10
+        // line 12
         echo         $this->env->getExtension('form')->renderer->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_start', array("attr" => array("class" => "form-horizontal style-form", "role" => "form")));
         echo "
         <div class=\"row\">
+         <div class=\"page-header\">
+            <h2>Nowe ogłoszenie</h2>
+        </div>
+        </div>
+        <div class=\"row\">
 
-            <h3 class=\"\">Podstawowe informacje</h3>
+            <h3 class=\"sub-header\">Podstawowe informacje</h3>
             <div class=\"col-xs-6\">
                     <div class=\"form-group\">
+                    <span class=\"badge\">*</span>
                             ";
-        // line 16
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "wolneod", array()), 'label', array("label_attr" => array("class" => "col-md-4 control-label"), "label" => "Wolne od:"));
+        // line 24
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "wolneod", array()), 'label', array("label_attr" => array("class" => "col-md-4 control-label "), "label" => "Wolne od:"));
         echo "
                             <div class=\"col-sm-4\">
                                 ";
-        // line 18
+        // line 26
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "wolneod", array()), 'widget', array("attr" => array("class" => "form-control")));
         echo "
                                 ";
-        // line 19
+        // line 27
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "wolneod", array()), 'errors');
         echo "
                             </div>
                     </div>
                     <div class=\"form-group\">
+                    <span class=\"badge\">*</span>
                     ";
-        // line 23
+        // line 32
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "miasto", array()), 'label', array("label_attr" => array("class" => "col-md-4 control-label"), "label" => "Typ budynku:"));
         echo "
                         <div class=\"col-sm-4\">
                             ";
-        // line 25
+        // line 34
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "miasto", array()), 'widget', array("attr" => array("class" => "form-control")));
         echo "
                             ";
-        // line 26
+        // line 35
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "miasto", array()), 'errors');
         echo "
                         </div>
                     </div>
                     <div class=\"form-group\">
+                    <span class=\"badge\">*</span>
                         ";
-        // line 30
+        // line 40
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "dzielnica", array()), 'label', array("label_attr" => array("class" => "col-md-4 control-label"), "label" => "Dzielnica:"));
         echo "
                         <div class=\"col-sm-4\">
                             ";
-        // line 32
+        // line 42
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "dzielnica", array()), 'widget', array("attr" => array("class" => "form-control")));
         echo "
                             ";
-        // line 33
+        // line 43
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "dzielnica", array()), 'errors');
         echo "
                         </div>
                     </div>
                     <div class=\"form-group\">
+                    <span class=\"badge\">*</span>
                         ";
-        // line 37
+        // line 48
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "ulica", array()), 'label', array("label_attr" => array("class" => "col-md-4 control-label"), "label" => "Ulica:"));
         echo "
                         <div class=\"col-sm-4\">
                             ";
-        // line 39
+        // line 50
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "ulica", array()), 'widget', array("attr" => array("class" => "form-control")));
         echo "
                             ";
-        // line 40
+        // line 51
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "ulica", array()), 'errors');
         echo "
                         </div>
                     </div>
                     <div class=\"form-group\">
+                    <span class=\"badge\">*</span>
                         ";
-        // line 44
+        // line 56
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "typstancji", array()), 'label', array("label_attr" => array("class" => "col-md-4 control-label"), "label" => "Typ stancji:"));
         echo "
                         <div class=\"col-sm-4\">
                             ";
-        // line 46
+        // line 58
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "typstancji", array()), 'widget', array("attr" => array("class" => "form-control")));
         echo "
                             ";
-        // line 47
+        // line 59
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "typstancji", array()), 'errors');
         echo "
                         </div>
@@ -153,65 +165,69 @@ class __TwigTemplate_1bbfb16285a714c0aa63f92ba1cdc442d9d9821b931cbb6d7b53691e939
 
             <div class=\"col-xs-6\">
                 <div class=\"form-group\">
+                <span class=\"badge\">*</span>
                     ";
-        // line 54
+        // line 67
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "typbudynku", array()), 'label', array("label_attr" => array("class" => "col-md-4 control-label"), "label" => "Typ budynku:"));
         echo "
                     <div class=\"col-sm-4\">
                         ";
-        // line 56
+        // line 69
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "typbudynku", array()), 'widget', array("attr" => array("class" => "form-control")));
         echo "
                         ";
-        // line 57
+        // line 70
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "typbudynku", array()), 'errors');
         echo "
                     </div>
                 </div>
                 <div class=\"form-group\">
+                <span class=\"badge\">*</span>
                     ";
-        // line 61
+        // line 75
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "liczbapokoi", array()), 'label', array("label_attr" => array("class" => "col-md-4 control-label"), "label" => "Liczba pokoi:"));
         echo "
                     <div class=\"col-sm-4\">
                         ";
-        // line 63
+        // line 77
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "liczbapokoi", array()), 'widget', array("attr" => array("class" => "form-control")));
         echo "
                         ";
-        // line 64
+        // line 78
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "liczbapokoi", array()), 'errors');
         echo "
                     </div>
                 </div>
                 <div class=\"form-group\">
+                <span class=\"badge\">*</span>
                     ";
-        // line 68
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "maksliczbaosob", array()), 'label', array("label_attr" => array("class" => "col-md-4 control-label"), "label" => "Maksymalna liczba osob:"));
+        // line 83
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "maksliczbaosob", array()), 'label', array("label_attr" => array("class" => "col-md-4 control-label"), "label" => "Maksymalna liczba osób:"));
         echo "
                     <div class=\"col-sm-4\">
                         ";
-        // line 70
+        // line 85
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "maksliczbaosob", array()), 'widget', array("attr" => array("class" => "form-control")));
         echo "
                         ";
-        // line 71
+        // line 86
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "maksliczbaosob", array()), 'errors');
         echo "
                     </div>
                 </div>
                 <div class=\"form-group\">
+                <span class=\"badge\">*</span>
                     ";
-        // line 75
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "metraz", array()), 'label', array("label_attr" => array("class" => "col-md-4 control-label"), "label" => "Metraz:"));
+        // line 91
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "metraz", array()), 'label', array("label_attr" => array("class" => "col-md-4 control-label"), "label" => "Metraż:"));
         echo "
                     <div class=\"col-sm-4\">
                         ";
-        // line 77
+        // line 93
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "metraz", array()), 'widget', array("attr" => array("class" => "form-control")));
         echo "
                         ";
-        // line 78
+        // line 94
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "metraz", array()), 'errors');
         echo "
                     </div>
@@ -221,61 +237,61 @@ class __TwigTemplate_1bbfb16285a714c0aa63f92ba1cdc442d9d9821b931cbb6d7b53691e939
         <div class=\"row\">
             <div class=\"col-xs-6\">
                 <div class=\"row\">
-                    <h3 class=\"\">Wyposazenie</h3>
+                    <h3 class=\"\">Wyposażenie</h3>
                     <div class=\"row\">
                         <div class=\"col-sm-2\">
                         ";
-        // line 89
+        // line 105
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "internet", array()), 'label', array("label_attr" => array("class" => ""), "label" => "Internet:"));
         echo "
                         ";
-        // line 90
+        // line 106
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "internet", array()), 'widget', array("attr" => array("class" => "")));
         echo "
                         ";
-        // line 91
+        // line 107
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "internet", array()), 'errors');
         echo "
                         </div>
                         <div class=\"col-sm-2\">
                         ";
-        // line 94
+        // line 110
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "telefon", array()), 'label', array("label_attr" => array("class" => ""), "label" => "Telefon:"));
         echo "
                         ";
-        // line 95
+        // line 111
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "telefon", array()), 'widget', array("attr" => array("class" => "")));
         echo "
                         ";
-        // line 96
+        // line 112
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "telefon", array()), 'errors');
         echo "
                         </div>
                         <div class=\"col-sm-2\">
                         ";
-        // line 99
+        // line 115
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "telewizor", array()), 'label', array("label_attr" => array("class" => ""), "label" => "Telewizor:"));
         echo "
                         ";
-        // line 100
+        // line 116
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "telewizor", array()), 'widget', array("attr" => array("class" => "")));
         echo "
                         ";
-        // line 101
+        // line 117
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "telewizor", array()), 'errors');
         echo "
                         </div>
                         <div class=\"col-sm-2\">
                         ";
-        // line 104
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "kablowka", array()), 'label', array("label_attr" => array("class" => ""), "label" => "Kablowka:"));
+        // line 120
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "kablowka", array()), 'label', array("label_attr" => array("class" => ""), "label" => "TV-kablowa:"));
         echo "
                         ";
-        // line 105
+        // line 121
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "kablowka", array()), 'widget', array("attr" => array("class" => "")));
         echo "
                         ";
-        // line 106
+        // line 122
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "kablowka", array()), 'errors');
         echo "
                         </div>
@@ -284,57 +300,57 @@ class __TwigTemplate_1bbfb16285a714c0aa63f92ba1cdc442d9d9821b931cbb6d7b53691e939
                     <div class=\"row\">
                         <div class=\"col-sm-2\">
                         ";
-        // line 112
+        // line 128
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "pralka", array()), 'label', array("label_attr" => array("class" => ""), "label" => "Pralka:"));
         echo "
                         ";
-        // line 113
+        // line 129
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "pralka", array()), 'widget', array("attr" => array("class" => "")));
         echo "
                         ";
-        // line 114
+        // line 130
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "pralka", array()), 'errors');
         echo "
                         </div>
                         <div class=\"col-sm-2\">
                         ";
-        // line 117
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "lodowka", array()), 'label', array("label_attr" => array("class" => ""), "label" => "Lodowka:"));
+        // line 133
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "lodowka", array()), 'label', array("label_attr" => array("class" => ""), "label" => "Lodówka:"));
         echo "
                         ";
-        // line 118
+        // line 134
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "lodowka", array()), 'widget', array("attr" => array("class" => "")));
         echo "
                         ";
-        // line 119
+        // line 135
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "lodowka", array()), 'errors');
         echo "
                         </div>
                         <div class=\"col-sm-2\">
                         ";
-        // line 122
+        // line 138
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "prysznic", array()), 'label', array("label_attr" => array("class" => ""), "label" => "Prysznic:"));
         echo "
                         ";
-        // line 123
+        // line 139
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "prysznic", array()), 'widget', array("attr" => array("class" => "")));
         echo "
                         ";
-        // line 124
+        // line 140
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "prysznic", array()), 'errors');
         echo "
                         </div>
                         <div class=\"col-sm-2\">
                         ";
-        // line 127
+        // line 143
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "wanna", array()), 'label', array("label_attr" => array("class" => ""), "label" => "Wanna:"));
         echo "
                         ";
-        // line 128
+        // line 144
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "wanna", array()), 'widget', array("attr" => array("class" => "")));
         echo "
                         ";
-        // line 129
+        // line 145
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "wanna", array()), 'errors');
         echo "
                         </div>
@@ -343,57 +359,57 @@ class __TwigTemplate_1bbfb16285a714c0aa63f92ba1cdc442d9d9821b931cbb6d7b53691e939
                     <div class=\"row\">
                         <div class=\"col-sm-2\">
                         ";
-        // line 135
+        // line 151
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "balkon", array()), 'label', array("label_attr" => array("class" => ""), "label" => "Balkon:"));
         echo "
                         ";
-        // line 136
+        // line 152
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "balkon", array()), 'widget', array("attr" => array("class" => "")));
         echo "
                         ";
-        // line 137
+        // line 153
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "balkon", array()), 'errors');
         echo "
                         </div>
                         <div class=\"col-sm-2\">
                         ";
-        // line 140
+        // line 156
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "taras", array()), 'label', array("label_attr" => array("class" => ""), "label" => "Taras:"));
         echo "
                         ";
-        // line 141
+        // line 157
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "taras", array()), 'widget', array("attr" => array("class" => "")));
         echo "
                         ";
-        // line 142
+        // line 158
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "taras", array()), 'errors');
         echo "
                         </div>
                         <div class=\"col-sm-2\">
                         ";
-        // line 145
+        // line 161
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "parking", array()), 'label', array("label_attr" => array("class" => ""), "label" => "Parking:"));
         echo "
                         ";
-        // line 146
+        // line 162
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "parking", array()), 'widget', array("attr" => array("class" => "")));
         echo "
                         ";
-        // line 147
+        // line 163
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "parking", array()), 'errors');
         echo "
                         </div>
                         <div class=\"col-sm-2\">
                         ";
-        // line 150
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "garaz", array()), 'label', array("label_attr" => array("class" => ""), "label" => "Garaz:"));
+        // line 166
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "garaz", array()), 'label', array("label_attr" => array("class" => ""), "label" => "Garaż:"));
         echo "
                         ";
-        // line 151
+        // line 167
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "garaz", array()), 'widget', array("attr" => array("class" => "")));
         echo "
                         ";
-        // line 152
+        // line 168
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "garaz", array()), 'errors');
         echo "
                         </div>
@@ -407,47 +423,47 @@ class __TwigTemplate_1bbfb16285a714c0aa63f92ba1cdc442d9d9821b931cbb6d7b53691e939
             <div class=\"col-xs-6\">
                 <div class=\"row\">
                     <p></p>
-                    <h3 class=\"\">Preferencje</h3>
+                    <h3 class=\"\">Współlokatorzy</h3>
                     <div class=\"row\">
                         <div class=\"col-sm-2\">
                             ";
-        // line 167
+        // line 183
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "kobiety", array()), 'label', array("label_attr" => array("class" => ""), "label" => "Kobiety:"));
         echo "
                             ";
-        // line 168
+        // line 184
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "kobiety", array()), 'widget', array("attr" => array("class" => "")));
         echo "
                             ";
-        // line 169
+        // line 185
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "kobiety", array()), 'errors');
         echo "
                         </div>
                         <div class=\"col-sm-2\">
                             ";
-        // line 172
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "mezczyzni", array()), 'label', array("label_attr" => array("class" => ""), "label" => "Mezczyzni:"));
+        // line 188
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "mezczyzni", array()), 'label', array("label_attr" => array("class" => ""), "label" => "Mężczyźni:"));
         echo "
                             ";
-        // line 173
+        // line 189
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "mezczyzni", array()), 'widget', array("attr" => array("class" => "")));
         echo "
                             ";
-        // line 174
+        // line 190
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "mezczyzni", array()), 'errors');
         echo "
                         </div>
                         <div class=\"col-sm-2\">
                             ";
-        // line 177
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "palacy", array()), 'label', array("label_attr" => array("class" => ""), "label" => "Palacy:"));
+        // line 193
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "palacy", array()), 'label', array("label_attr" => array("class" => ""), "label" => "Palący:"));
         echo "
                             ";
-        // line 178
+        // line 194
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "palacy", array()), 'widget', array("attr" => array("class" => "")));
         echo "
                             ";
-        // line 179
+        // line 195
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "palacy", array()), 'errors');
         echo "
                         </div>
@@ -456,43 +472,43 @@ class __TwigTemplate_1bbfb16285a714c0aa63f92ba1cdc442d9d9821b931cbb6d7b53691e939
                     <div class=\"row\">
                         <div class=\"col-sm-2\">
                             ";
-        // line 185
+        // line 201
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "studenci", array()), 'label', array("label_attr" => array("class" => ""), "label" => "Studenci:"));
         echo "
                             ";
-        // line 186
+        // line 202
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "studenci", array()), 'widget', array("attr" => array("class" => "")));
         echo "
                             ";
-        // line 187
+        // line 203
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "studenci", array()), 'errors');
         echo "
                         </div>
                         <div class=\"col-sm-2\">
                             ";
-        // line 190
+        // line 206
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "pary", array()), 'label', array("label_attr" => array("class" => ""), "label" => "Pary:"));
         echo "
                             ";
-        // line 191
+        // line 207
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "pary", array()), 'widget', array("attr" => array("class" => "")));
         echo "
                             ";
-        // line 192
+        // line 208
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "pary", array()), 'errors');
         echo "
                         </div>
                         <div class=\"col-sm-2\">
                             ";
-        // line 195
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "pracujacy", array()), 'label', array("label_attr" => array("class" => ""), "label" => "Pracujacy:"));
+        // line 211
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "pracujacy", array()), 'label', array("label_attr" => array("class" => ""), "label" => "Pracujący:"));
         echo "
                             ";
-        // line 196
+        // line 212
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "pracujacy", array()), 'widget', array("attr" => array("id" => "")));
         echo "
                             ";
-        // line 197
+        // line 213
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "pracujacy", array()), 'errors');
         echo "
                         </div>
@@ -503,51 +519,54 @@ class __TwigTemplate_1bbfb16285a714c0aa63f92ba1cdc442d9d9821b931cbb6d7b53691e939
         <div class=\"row\">
             <div class=\"col-xs-6\">
                 <div class=\"row\">
-                <h3 class=\"\">Oplaty</h3>
+                <h3 class=\"\">Opłaty</h3>
                 <div class=\"form-group\">
+                <span class=\"badge\">*</span>
                     ";
-        // line 208
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "cenazamiesiac", array()), 'label', array("label_attr" => array("class" => "col-md-4 control-label"), "label" => "Cena za miesiac:"));
+        // line 225
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "cenazamiesiac", array()), 'label', array("label_attr" => array("class" => "col-md-4 control-label"), "label" => "Cena za miesiąc:"));
         echo "
                     <div class=\"col-sm-4\">
                         ";
-        // line 210
+        // line 227
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "cenazamiesiac", array()), 'widget', array("attr" => array("class" => "form-control")));
         echo "
                         ";
-        // line 211
+        // line 228
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "cenazamiesiac", array()), 'errors');
         echo "
                     </div>
                 </div>
                 <div class=\"form-group\">
+                <span class=\"badge\">*</span>
                     ";
-        // line 215
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "dodatkoweoplaty", array()), 'label', array("label_attr" => array("class" => "col-md-4 control-label"), "label" => "Dodatkowe oplaty:"));
+        // line 233
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "dodatkoweoplaty", array()), 'label', array("label_attr" => array("class" => "col-md-4 control-label"), "label" => "Dodatkowe oplaty na miesiąc:"));
         echo "
                     <div class=\"col-sm-4\">
                         ";
-        // line 217
+        // line 235
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "dodatkoweoplaty", array()), 'widget', array("attr" => array("class" => "form-control")));
         echo "
                         ";
-        // line 218
+        // line 236
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "dodatkoweoplaty", array()), 'errors');
         echo "
                     </div>
                 </div>
                 <div class=\"form-group\">
+                <span class=\"badge\">*</span>
                     ";
-        // line 222
+        // line 241
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "kaucja", array()), 'label', array("label_attr" => array("class" => "col-md-4 control-label"), "label" => "Kaucja:"));
         echo "
                     <div class=\"col-sm-4\">
                         ";
-        // line 224
+        // line 243
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "kaucja", array()), 'widget', array("attr" => array("class" => "form-control")));
         echo "
                         ";
-        // line 225
+        // line 244
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "kaucja", array()), 'errors');
         echo "
                     </div>
@@ -555,41 +574,38 @@ class __TwigTemplate_1bbfb16285a714c0aa63f92ba1cdc442d9d9821b931cbb6d7b53691e939
                 </div>
             </div>
 
+            <div class=\"row\">
+                <div class=\"col-xs-6\">
+                        <div class=\"row\">
+                            <h3 class=\"\">Galeria</h3>
 
-            <div class=\"col-xs-6\">
-                <div class=\"row\">
-                    <h3>Dodatkowe informacje:</h3>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class=\"col-xs-6\">
+             <div class=\"row\">
                         <div class=\"form-group\">
                             ";
-        // line 236
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "dodatkoweinformacje", array()), 'label', array("label_attr" => array("class" => "col-md-4 control-label"), "label" => " "));
+        // line 262
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "dodatkoweinformacje", array()), 'label', array("label_attr" => array("for" => "comment"), "label" => "Dodatkowe informacje:"));
         echo "
-                            <div class=\"col-sm-6\">
-                                ";
-        // line 238
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "dodatkoweinformacje", array()), 'widget', array("attr" => array("class" => "form-control")));
+                                    ";
+        // line 263
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "dodatkoweinformacje", array()), 'widget', array("attr" => array("class" => "form-control", "id" => "area")));
         echo "
-                                ";
-        // line 239
+                                    ";
+        // line 264
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "dodatkoweinformacje", array()), 'errors');
         echo "
-                            </div>
+
                         </div>
-
-                </div>
-            </div>
-        </div>
-
-            <div class=\"col-xs-6\">
-                <div class=\"row\">
-                    <h3 class=\"\">Galeria</h3>
-                </div>
-            </div>
+             </div>
+         </div>
 
 
-        </div>
         ";
-        // line 255
+        // line 271
         echo         $this->env->getExtension('form')->renderer->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_end');
         echo "
     </div>
@@ -599,7 +615,7 @@ class __TwigTemplate_1bbfb16285a714c0aa63f92ba1cdc442d9d9821b931cbb6d7b53691e939
 
 ";
         
-        $__internal_13e773902cfdbc69d289a88fe3e0f8a6aab539a211893791946713639347efd4->leave($__internal_13e773902cfdbc69d289a88fe3e0f8a6aab539a211893791946713639347efd4_prof);
+        $__internal_350fe1fd13baeb4c2346bfc8cb2a4f76b4b4c72f9b62bd38f187ec68787904dd->leave($__internal_350fe1fd13baeb4c2346bfc8cb2a4f76b4b4c72f9b62bd38f187ec68787904dd_prof);
 
     }
 
@@ -615,7 +631,7 @@ class __TwigTemplate_1bbfb16285a714c0aa63f92ba1cdc442d9d9821b931cbb6d7b53691e939
 
     public function getDebugInfo()
     {
-        return array (  593 => 255,  574 => 239,  570 => 238,  565 => 236,  551 => 225,  547 => 224,  542 => 222,  535 => 218,  531 => 217,  526 => 215,  519 => 211,  515 => 210,  510 => 208,  496 => 197,  492 => 196,  488 => 195,  482 => 192,  478 => 191,  474 => 190,  468 => 187,  464 => 186,  460 => 185,  451 => 179,  447 => 178,  443 => 177,  437 => 174,  433 => 173,  429 => 172,  423 => 169,  419 => 168,  415 => 167,  397 => 152,  393 => 151,  389 => 150,  383 => 147,  379 => 146,  375 => 145,  369 => 142,  365 => 141,  361 => 140,  355 => 137,  351 => 136,  347 => 135,  338 => 129,  334 => 128,  330 => 127,  324 => 124,  320 => 123,  316 => 122,  310 => 119,  306 => 118,  302 => 117,  296 => 114,  292 => 113,  288 => 112,  279 => 106,  275 => 105,  271 => 104,  265 => 101,  261 => 100,  257 => 99,  251 => 96,  247 => 95,  243 => 94,  237 => 91,  233 => 90,  229 => 89,  215 => 78,  211 => 77,  206 => 75,  199 => 71,  195 => 70,  190 => 68,  183 => 64,  179 => 63,  174 => 61,  167 => 57,  163 => 56,  158 => 54,  148 => 47,  144 => 46,  139 => 44,  132 => 40,  128 => 39,  123 => 37,  116 => 33,  112 => 32,  107 => 30,  100 => 26,  96 => 25,  91 => 23,  84 => 19,  80 => 18,  75 => 16,  66 => 10,  62 => 8,  59 => 7,  45 => 5,  40 => 4,  34 => 3,  11 => 1,);
+        return array (  609 => 271,  599 => 264,  595 => 263,  591 => 262,  570 => 244,  566 => 243,  561 => 241,  553 => 236,  549 => 235,  544 => 233,  536 => 228,  532 => 227,  527 => 225,  512 => 213,  508 => 212,  504 => 211,  498 => 208,  494 => 207,  490 => 206,  484 => 203,  480 => 202,  476 => 201,  467 => 195,  463 => 194,  459 => 193,  453 => 190,  449 => 189,  445 => 188,  439 => 185,  435 => 184,  431 => 183,  413 => 168,  409 => 167,  405 => 166,  399 => 163,  395 => 162,  391 => 161,  385 => 158,  381 => 157,  377 => 156,  371 => 153,  367 => 152,  363 => 151,  354 => 145,  350 => 144,  346 => 143,  340 => 140,  336 => 139,  332 => 138,  326 => 135,  322 => 134,  318 => 133,  312 => 130,  308 => 129,  304 => 128,  295 => 122,  291 => 121,  287 => 120,  281 => 117,  277 => 116,  273 => 115,  267 => 112,  263 => 111,  259 => 110,  253 => 107,  249 => 106,  245 => 105,  231 => 94,  227 => 93,  222 => 91,  214 => 86,  210 => 85,  205 => 83,  197 => 78,  193 => 77,  188 => 75,  180 => 70,  176 => 69,  171 => 67,  160 => 59,  156 => 58,  151 => 56,  143 => 51,  139 => 50,  134 => 48,  126 => 43,  122 => 42,  117 => 40,  109 => 35,  105 => 34,  100 => 32,  92 => 27,  88 => 26,  83 => 24,  68 => 12,  62 => 8,  59 => 7,  45 => 5,  40 => 4,  34 => 3,  11 => 1,);
     }
 }
 /* {% extends 'base.html.twig' %}*/
@@ -626,20 +642,29 @@ class __TwigTemplate_1bbfb16285a714c0aa63f92ba1cdc442d9d9821b931cbb6d7b53691e939
 /*     {% endstylesheets %}*/
 /*     {% form_theme form 'bootstrap_3_layout.html.twig' %}*/
 /* */
+/* */
 /*     <div class="container" >*/
+/* */
 /*         {{ form_start(form, {'attr': {'class': 'form-horizontal style-form', 'role': 'form'}}) }}*/
 /*         <div class="row">*/
+/*          <div class="page-header">*/
+/*             <h2>Nowe ogłoszenie</h2>*/
+/*         </div>*/
+/*         </div>*/
+/*         <div class="row">*/
 /* */
-/*             <h3 class="">Podstawowe informacje</h3>*/
+/*             <h3 class="sub-header">Podstawowe informacje</h3>*/
 /*             <div class="col-xs-6">*/
 /*                     <div class="form-group">*/
-/*                             {{ form_label(form.wolneod, 'Wolne od:', {'label_attr': {'class': 'col-md-4 control-label'}}) }}*/
+/*                     <span class="badge">*</span>*/
+/*                             {{ form_label(form.wolneod, 'Wolne od:', {'label_attr': {'class': 'col-md-4 control-label '}}) }}*/
 /*                             <div class="col-sm-4">*/
 /*                                 {{ form_widget(form.wolneod, {'attr': {'class':'form-control'}}) }}*/
 /*                                 {{ form_errors(form.wolneod) }}*/
 /*                             </div>*/
 /*                     </div>*/
 /*                     <div class="form-group">*/
+/*                     <span class="badge">*</span>*/
 /*                     {{ form_label(form.miasto, 'Typ budynku:', {'label_attr': {'class': 'col-md-4 control-label'}}) }}*/
 /*                         <div class="col-sm-4">*/
 /*                             {{ form_widget(form.miasto, {'attr': {'class':'form-control'}}) }}*/
@@ -647,6 +672,7 @@ class __TwigTemplate_1bbfb16285a714c0aa63f92ba1cdc442d9d9821b931cbb6d7b53691e939
 /*                         </div>*/
 /*                     </div>*/
 /*                     <div class="form-group">*/
+/*                     <span class="badge">*</span>*/
 /*                         {{ form_label(form.dzielnica, 'Dzielnica:', {'label_attr': {'class': 'col-md-4 control-label'}}) }}*/
 /*                         <div class="col-sm-4">*/
 /*                             {{ form_widget(form.dzielnica, {'attr': {'class':'form-control'}}) }}*/
@@ -654,6 +680,7 @@ class __TwigTemplate_1bbfb16285a714c0aa63f92ba1cdc442d9d9821b931cbb6d7b53691e939
 /*                         </div>*/
 /*                     </div>*/
 /*                     <div class="form-group">*/
+/*                     <span class="badge">*</span>*/
 /*                         {{ form_label(form.ulica, 'Ulica:', {'label_attr': {'class': 'col-md-4 control-label'}}) }}*/
 /*                         <div class="col-sm-4">*/
 /*                             {{ form_widget(form.ulica, {'attr': {'class':'form-control'}}) }}*/
@@ -661,6 +688,7 @@ class __TwigTemplate_1bbfb16285a714c0aa63f92ba1cdc442d9d9821b931cbb6d7b53691e939
 /*                         </div>*/
 /*                     </div>*/
 /*                     <div class="form-group">*/
+/*                     <span class="badge">*</span>*/
 /*                         {{ form_label(form.typstancji, 'Typ stancji:', {'label_attr': {'class': 'col-md-4 control-label'}}) }}*/
 /*                         <div class="col-sm-4">*/
 /*                             {{ form_widget(form.typstancji, {'attr': {'class':'form-control'}}) }}*/
@@ -671,6 +699,7 @@ class __TwigTemplate_1bbfb16285a714c0aa63f92ba1cdc442d9d9821b931cbb6d7b53691e939
 /* */
 /*             <div class="col-xs-6">*/
 /*                 <div class="form-group">*/
+/*                 <span class="badge">*</span>*/
 /*                     {{ form_label(form.typbudynku, 'Typ budynku:', {'label_attr': {'class': 'col-md-4 control-label'}}) }}*/
 /*                     <div class="col-sm-4">*/
 /*                         {{ form_widget(form.typbudynku, {'attr': {'class':'form-control'}}) }}*/
@@ -678,6 +707,7 @@ class __TwigTemplate_1bbfb16285a714c0aa63f92ba1cdc442d9d9821b931cbb6d7b53691e939
 /*                     </div>*/
 /*                 </div>*/
 /*                 <div class="form-group">*/
+/*                 <span class="badge">*</span>*/
 /*                     {{ form_label(form.liczbapokoi, 'Liczba pokoi:', {'label_attr': {'class': 'col-md-4 control-label'}}) }}*/
 /*                     <div class="col-sm-4">*/
 /*                         {{ form_widget(form.liczbapokoi, {'attr': {'class':'form-control'}}) }}*/
@@ -685,14 +715,16 @@ class __TwigTemplate_1bbfb16285a714c0aa63f92ba1cdc442d9d9821b931cbb6d7b53691e939
 /*                     </div>*/
 /*                 </div>*/
 /*                 <div class="form-group">*/
-/*                     {{ form_label(form.maksliczbaosob, 'Maksymalna liczba osob:', {'label_attr': {'class': 'col-md-4 control-label'}}) }}*/
+/*                 <span class="badge">*</span>*/
+/*                     {{ form_label(form.maksliczbaosob, 'Maksymalna liczba osób:', {'label_attr': {'class': 'col-md-4 control-label'}}) }}*/
 /*                     <div class="col-sm-4">*/
 /*                         {{ form_widget(form.maksliczbaosob, {'attr': {'class':'form-control'}}) }}*/
 /*                         {{ form_errors(form.maksliczbaosob) }}*/
 /*                     </div>*/
 /*                 </div>*/
 /*                 <div class="form-group">*/
-/*                     {{ form_label(form.metraz, 'Metraz:', {'label_attr': {'class': 'col-md-4 control-label'}}) }}*/
+/*                 <span class="badge">*</span>*/
+/*                     {{ form_label(form.metraz, 'Metraż:', {'label_attr': {'class': 'col-md-4 control-label'}}) }}*/
 /*                     <div class="col-sm-4">*/
 /*                         {{ form_widget(form.metraz, {'attr': {'class':'form-control'}}) }}*/
 /*                         {{ form_errors(form.metraz) }}*/
@@ -703,7 +735,7 @@ class __TwigTemplate_1bbfb16285a714c0aa63f92ba1cdc442d9d9821b931cbb6d7b53691e939
 /*         <div class="row">*/
 /*             <div class="col-xs-6">*/
 /*                 <div class="row">*/
-/*                     <h3 class="">Wyposazenie</h3>*/
+/*                     <h3 class="">Wyposażenie</h3>*/
 /*                     <div class="row">*/
 /*                         <div class="col-sm-2">*/
 /*                         {{ form_label(form.internet, 'Internet:', {'label_attr': {'class': ''}}) }}*/
@@ -721,7 +753,7 @@ class __TwigTemplate_1bbfb16285a714c0aa63f92ba1cdc442d9d9821b931cbb6d7b53691e939
 /*                         {{ form_errors(form.telewizor) }}*/
 /*                         </div>*/
 /*                         <div class="col-sm-2">*/
-/*                         {{ form_label(form.kablowka, 'Kablowka:', {'label_attr': {'class': ''}}) }}*/
+/*                         {{ form_label(form.kablowka, 'TV-kablowa:', {'label_attr': {'class': ''}}) }}*/
 /*                         {{ form_widget(form.kablowka, {'attr': {'class':''}}) }}*/
 /*                         {{ form_errors(form.kablowka) }}*/
 /*                         </div>*/
@@ -734,7 +766,7 @@ class __TwigTemplate_1bbfb16285a714c0aa63f92ba1cdc442d9d9821b931cbb6d7b53691e939
 /*                         {{ form_errors(form.pralka) }}*/
 /*                         </div>*/
 /*                         <div class="col-sm-2">*/
-/*                         {{ form_label(form.lodowka, 'Lodowka:', {'label_attr': {'class': ''}}) }}*/
+/*                         {{ form_label(form.lodowka, 'Lodówka:', {'label_attr': {'class': ''}}) }}*/
 /*                         {{ form_widget(form.lodowka, {'attr': {'class':''}}) }}*/
 /*                         {{ form_errors(form.lodowka) }}*/
 /*                         </div>*/
@@ -767,7 +799,7 @@ class __TwigTemplate_1bbfb16285a714c0aa63f92ba1cdc442d9d9821b931cbb6d7b53691e939
 /*                         {{ form_errors(form.parking) }}*/
 /*                         </div>*/
 /*                         <div class="col-sm-2">*/
-/*                         {{ form_label(form.garaz, 'Garaz:', {'label_attr': {'class': ''}}) }}*/
+/*                         {{ form_label(form.garaz, 'Garaż:', {'label_attr': {'class': ''}}) }}*/
 /*                         {{ form_widget(form.garaz, {'attr': {'class':''}}) }}*/
 /*                         {{ form_errors(form.garaz) }}*/
 /*                         </div>*/
@@ -781,7 +813,7 @@ class __TwigTemplate_1bbfb16285a714c0aa63f92ba1cdc442d9d9821b931cbb6d7b53691e939
 /*             <div class="col-xs-6">*/
 /*                 <div class="row">*/
 /*                     <p></p>*/
-/*                     <h3 class="">Preferencje</h3>*/
+/*                     <h3 class="">Współlokatorzy</h3>*/
 /*                     <div class="row">*/
 /*                         <div class="col-sm-2">*/
 /*                             {{ form_label(form.kobiety, 'Kobiety:', {'label_attr': {'class': ''}}) }}*/
@@ -789,12 +821,12 @@ class __TwigTemplate_1bbfb16285a714c0aa63f92ba1cdc442d9d9821b931cbb6d7b53691e939
 /*                             {{ form_errors(form.kobiety) }}*/
 /*                         </div>*/
 /*                         <div class="col-sm-2">*/
-/*                             {{ form_label(form.mezczyzni, 'Mezczyzni:', {'label_attr': {'class': ''}}) }}*/
+/*                             {{ form_label(form.mezczyzni, 'Mężczyźni:', {'label_attr': {'class': ''}}) }}*/
 /*                             {{ form_widget(form.mezczyzni, {'attr': {'class':''}}) }}*/
 /*                             {{ form_errors(form.mezczyzni) }}*/
 /*                         </div>*/
 /*                         <div class="col-sm-2">*/
-/*                             {{ form_label(form.palacy, 'Palacy:', {'label_attr': {'class': ''}}) }}*/
+/*                             {{ form_label(form.palacy, 'Palący:', {'label_attr': {'class': ''}}) }}*/
 /*                             {{ form_widget(form.palacy, {'attr': {'class':''}}) }}*/
 /*                             {{ form_errors(form.palacy) }}*/
 /*                         </div>*/
@@ -812,7 +844,7 @@ class __TwigTemplate_1bbfb16285a714c0aa63f92ba1cdc442d9d9821b931cbb6d7b53691e939
 /*                             {{ form_errors(form.pary) }}*/
 /*                         </div>*/
 /*                         <div class="col-sm-2">*/
-/*                             {{ form_label(form.pracujacy, 'Pracujacy:', {'label_attr': {'class': ''}}) }}*/
+/*                             {{ form_label(form.pracujacy, 'Pracujący:', {'label_attr': {'class': ''}}) }}*/
 /*                             {{ form_widget(form.pracujacy, {'attr': {'id':''}}) }}*/
 /*                             {{ form_errors(form.pracujacy) }}*/
 /*                         </div>*/
@@ -823,22 +855,25 @@ class __TwigTemplate_1bbfb16285a714c0aa63f92ba1cdc442d9d9821b931cbb6d7b53691e939
 /*         <div class="row">*/
 /*             <div class="col-xs-6">*/
 /*                 <div class="row">*/
-/*                 <h3 class="">Oplaty</h3>*/
+/*                 <h3 class="">Opłaty</h3>*/
 /*                 <div class="form-group">*/
-/*                     {{ form_label(form.cenazamiesiac, 'Cena za miesiac:', {'label_attr': {'class': 'col-md-4 control-label'}}) }}*/
+/*                 <span class="badge">*</span>*/
+/*                     {{ form_label(form.cenazamiesiac, 'Cena za miesiąc:', {'label_attr': {'class': 'col-md-4 control-label'}}) }}*/
 /*                     <div class="col-sm-4">*/
 /*                         {{ form_widget(form.cenazamiesiac, {'attr': {'class':'form-control'}}) }}*/
 /*                         {{ form_errors(form.cenazamiesiac) }}*/
 /*                     </div>*/
 /*                 </div>*/
 /*                 <div class="form-group">*/
-/*                     {{ form_label(form.dodatkoweoplaty, 'Dodatkowe oplaty:', {'label_attr': {'class': 'col-md-4 control-label'}}) }}*/
+/*                 <span class="badge">*</span>*/
+/*                     {{ form_label(form.dodatkoweoplaty, 'Dodatkowe oplaty na miesiąc:', {'label_attr': {'class': 'col-md-4 control-label'}}) }}*/
 /*                     <div class="col-sm-4">*/
 /*                         {{ form_widget(form.dodatkoweoplaty, {'attr': {'class':'form-control'}}) }}*/
 /*                         {{ form_errors(form.dodatkoweoplaty) }}*/
 /*                     </div>*/
 /*                 </div>*/
 /*                 <div class="form-group">*/
+/*                 <span class="badge">*</span>*/
 /*                     {{ form_label(form.kaucja, 'Kaucja:', {'label_attr': {'class': 'col-md-4 control-label'}}) }}*/
 /*                     <div class="col-sm-4">*/
 /*                         {{ form_widget(form.kaucja, {'attr': {'class':'form-control'}}) }}*/
@@ -848,30 +883,27 @@ class __TwigTemplate_1bbfb16285a714c0aa63f92ba1cdc442d9d9821b931cbb6d7b53691e939
 /*                 </div>*/
 /*             </div>*/
 /* */
+/*             <div class="row">*/
+/*                 <div class="col-xs-6">*/
+/*                         <div class="row">*/
+/*                             <h3 class="">Galeria</h3>*/
 /* */
-/*             <div class="col-xs-6">*/
-/*                 <div class="row">*/
-/*                     <h3>Dodatkowe informacje:</h3>*/
-/*                         <div class="form-group">*/
-/*                             {{ form_label(form.dodatkoweinformacje, ' ', {'label_attr': {'class': 'col-md-4 control-label'}}) }}*/
-/*                             <div class="col-sm-6">*/
-/*                                 {{ form_widget(form.dodatkoweinformacje, {'attr': {'class':'form-control'}}) }}*/
-/*                                 {{ form_errors(form.dodatkoweinformacje) }}*/
-/*                             </div>*/
 /*                         </div>*/
-/* */
+/*                     </div>*/
 /*                 </div>*/
-/*             </div>*/
 /*         </div>*/
+/*         <div class="col-xs-6">*/
+/*              <div class="row">*/
+/*                         <div class="form-group">*/
+/*                             {{ form_label(form.dodatkoweinformacje, 'Dodatkowe informacje:', {'label_attr': {'for': 'comment'}}) }}*/
+/*                                     {{ form_widget(form.dodatkoweinformacje, {'attr': {'class':'form-control', 'id':'area'}}) }}*/
+/*                                     {{ form_errors(form.dodatkoweinformacje) }}*/
 /* */
-/*             <div class="col-xs-6">*/
-/*                 <div class="row">*/
-/*                     <h3 class="">Galeria</h3>*/
-/*                 </div>*/
-/*             </div>*/
+/*                         </div>*/
+/*              </div>*/
+/*          </div>*/
 /* */
 /* */
-/*         </div>*/
 /*         {{ form_end(form) }}*/
 /*     </div>*/
 /* */

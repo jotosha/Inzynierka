@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Cztery �ciany{% endblock %}</title>
+        <title>{% block title %}Cztery Ściany{% endblock %}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -14,6 +14,7 @@
     <body>
     {% block body %}{% endblock %}
 
+
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
@@ -22,11 +23,11 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="{{ path('StronaGlowna') }}">Cztery �ciany</a>
+                    <a class="navbar-brand" href="{{ path('StronaGlowna') }}">Cztery Ściany</a>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="{{ path('NoweOgloszenie') }}">DODAJ OGLOSZENIE</a></li>
+                        <li><a href="{{ path('NoweOgloszenie') }}">DODAJ OGŁOSZENIE</a></li>
                         <li><a href="#">PROFIL</a></li>
                         <li><a href="{{ path('Login') }}">ZALOGUJ</a></li>
                     </ul>
@@ -39,7 +40,7 @@
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#">Regulamin</a></li>
-                        <li><a href="#">Polityka prywatnosci</a></li>
+                        <li><a href="#">Polityka prywatności</a></li>
                         <li><a href="#">Kontakt</a></li>
                     </ul>
                 </div>

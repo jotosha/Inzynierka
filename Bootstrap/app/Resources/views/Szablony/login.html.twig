@@ -17,16 +17,16 @@
                         {{ form_widget(form.login, {'attr': {'class':'form-control' , 'placeholder' : 'Email'}}) }}
                         {{ form_errors(form.login) }}
                         {{ form_label(form.password, '', {'label_attr': {'class': ''}}) }}
-                        {{ form_widget(form.password, {'attr': {'class':'form-control' , 'placeholder' : 'Password'}}) }}
+                        {{ form_widget(form.password, {'attr': {'class':'form-control' , 'placeholder' : 'Hasło'}}) }}
                         {{ form_errors(form.login) }}
                         <button class="btn btn-lg btn-primary btn-block" type="submit">
-                            Zaloguj sie</button>
-                        {{ form_label(form.zapamietajmnie, 'Zapamietaj mnie', {'label_attr': {'class': ''}}) }}
+                            Zaloguj się</button>
+                        {{ form_label(form.zapamietajmnie, 'Zapamiętaj mnie', {'label_attr': {'class': ''}}) }}
                         {{ form_widget(form.zapamietajmnie) }}
                         {{ form_errors(form.zapamietajmnie) }}
                     {{ form_end(form) }}
                 </div>
-                <a href="#" class="text-center new-account">Create an account </a>
+                <a href="#" class="text-center new-account">Stwórz konto</a>
             </div>
         </div>
     </div>

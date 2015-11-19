@@ -1,0 +1,16 @@
+form{
+    position: relative;
+    top:100px;
+}
+textarea{
+    width: 200px;
+    min-width:200px;
+    max-width:200px;
+
+    height:100px;
+    min-height:100px;
+    max-height:100px;
+}
+#comment{
+    width: 200px;
+}

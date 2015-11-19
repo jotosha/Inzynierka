@@ -17,7 +17,7 @@ class Login extends AbstractType
                 'label' => false
             ))
             ->add('zapamietajmnie', 'checkbox', array(
-                'label' => 'Zapamietaj mnie',
+                'label' => 'Zapamiętaj mnie',
                 'label_attr' => array(
                     'class' => 'checkbox-inline'
                 )
