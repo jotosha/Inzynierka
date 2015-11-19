@@ -9,6 +9,7 @@
 namespace AppBundle\Entity;
 
 
+
 class RegisterEntity
 {
     protected $email;
@@ -19,7 +20,6 @@ class RegisterEntity
 
     protected $nazwisko;
 
-    protected $dataurodzenia;
 
     protected $telefon;
 
@@ -36,9 +36,6 @@ class RegisterEntity
     }
     public function getnazwisko(){
         return $this->nazwisko;
-    }
-    public function getdataurodzenia(){
-        return $this->dataurodzenia;
     }
     public function gettelefon(){
         return $this->telefon;

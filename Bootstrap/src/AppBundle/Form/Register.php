@@ -10,18 +10,27 @@ class Register extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('email', 'email', array(
-        ));
-        $builder->add('haslo', 'password', array(
-        ));
         $builder->add('imie', 'text', array(
-        ));
-        $builder->add('nazwisko', 'text', array(
-        ));
-        $builder->add('dataurodzenia', 'birthday', array(
-        ));
-        $builder->add('telefon', 'number', array(
-        ));
+        ))
+            ->add('nazwisko', 'text', array(
+                'label'=> false,
+            ))
+            ->add('nazwauzytkownika', 'text', array(
+            ))
+            ->add('email', 'email', array(
+            ))
+            ->add('haslo', 'password', array(
+            ))
+            ->add('telefon', 'number', array(
+            ))
+            ->add('captcha', 'text', array(
+            ))
+            ->add('akceptacja', 'checkbox', array(
+                'label' => 'Akceptuje regulamin serwisu',
+                'label_attr' => array(
+                    'class' => 'checkbox-inline'
+                )
+            ));
     }
 
 
