@@ -2,7 +2,8 @@
 
 namespace AppBundle\Controller;
 
-use AppBundle\Entity\Task;
+
+use AppBundle\Entity\SearchEntity;
 use AppBundle\Form\Search;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -17,7 +18,7 @@ class GlownaController extends Controller
     public function newAction()
     {
         // create a task and give it some dummy data for this example
-        $task = new Task();
+        $task = new SearchEntity();
 
         $form = $this->createForm(new Search());
 

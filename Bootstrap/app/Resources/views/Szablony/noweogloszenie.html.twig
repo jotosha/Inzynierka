@@ -59,6 +59,14 @@
                             {{ form_errors(form.typstancji) }}
                         </div>
                     </div>
+                    <div class="form-group">
+                        <span class="badge">*</span>
+                        {{ form_label(form.czastrwania, 'Czas trwania:', {'label_attr': {'class': 'col-md-4 control-label'}}) }}
+                        <div class="col-sm-4">
+                            {{ form_widget(form.czastrwania, {'attr': {'class':'form-control'}}) }}
+                            {{ form_errors(form.czastrwania) }}
+                        </div>
+                    </div>
             </div>
 
             <div class="col-xs-6">
@@ -68,6 +76,14 @@
                     <div class="col-sm-4">
                         {{ form_widget(form.typbudynku, {'attr': {'class':'form-control'}}) }}
                         {{ form_errors(form.typbudynku) }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <span class="badge">*</span>
+                    {{ form_label(form.pietro, 'Piętro:', {'label_attr': {'class': 'col-md-4 control-label'}}) }}
+                    <div class="col-sm-4">
+                        {{ form_widget(form.pietro, {'attr': {'class':'form-control'}}) }}
+                        {{ form_errors(form.pietro) }}
                     </div>
                 </div>
                 <div class="form-group">

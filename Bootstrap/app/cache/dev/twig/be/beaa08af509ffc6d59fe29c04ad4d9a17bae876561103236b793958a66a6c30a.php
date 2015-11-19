@@ -21,20 +21,20 @@ class __TwigTemplate_cd1bb21230553ef453cb8455d9608ffa3f5346ea9cc5d5906f0d506a2da
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_db4661ba17e70cbf319ee64ccce47bdc1f1057dd479d534a5a3bf0031706a322 = $this->env->getExtension("native_profiler");
-        $__internal_db4661ba17e70cbf319ee64ccce47bdc1f1057dd479d534a5a3bf0031706a322->enter($__internal_db4661ba17e70cbf319ee64ccce47bdc1f1057dd479d534a5a3bf0031706a322_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":Szablony:login.html.twig"));
+        $__internal_2095e05c6b93d8d1a9245638078b8cc8dea890c9d03f3901f65d7bf7ed0f1a3d = $this->env->getExtension("native_profiler");
+        $__internal_2095e05c6b93d8d1a9245638078b8cc8dea890c9d03f3901f65d7bf7ed0f1a3d->enter($__internal_2095e05c6b93d8d1a9245638078b8cc8dea890c9d03f3901f65d7bf7ed0f1a3d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":Szablony:login.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_db4661ba17e70cbf319ee64ccce47bdc1f1057dd479d534a5a3bf0031706a322->leave($__internal_db4661ba17e70cbf319ee64ccce47bdc1f1057dd479d534a5a3bf0031706a322_prof);
+        $__internal_2095e05c6b93d8d1a9245638078b8cc8dea890c9d03f3901f65d7bf7ed0f1a3d->leave($__internal_2095e05c6b93d8d1a9245638078b8cc8dea890c9d03f3901f65d7bf7ed0f1a3d_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_5ad5d9f0411e2cb241b3423e488d06cfaca2101a90c7f9064eaa55c13fb2aa11 = $this->env->getExtension("native_profiler");
-        $__internal_5ad5d9f0411e2cb241b3423e488d06cfaca2101a90c7f9064eaa55c13fb2aa11->enter($__internal_5ad5d9f0411e2cb241b3423e488d06cfaca2101a90c7f9064eaa55c13fb2aa11_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_9ecb105f00caa755b381e591f4aa244b54bae3219bebcec989a17e3a253f1bd1 = $this->env->getExtension("native_profiler");
+        $__internal_9ecb105f00caa755b381e591f4aa244b54bae3219bebcec989a17e3a253f1bd1->enter($__internal_9ecb105f00caa755b381e591f4aa244b54bae3219bebcec989a17e3a253f1bd1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "    ";
@@ -113,14 +113,17 @@ class __TwigTemplate_cd1bb21230553ef453cb8455d9608ffa3f5346ea9cc5d5906f0d506a2da
         echo         $this->env->getExtension('form')->renderer->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_end');
         echo "
                 </div>
-                <a href=\"#\" class=\"text-center new-account\">Stwórz konto</a>
+                <a href=\"";
+        // line 29
+        echo $this->env->getExtension('routing')->getPath("Register");
+        echo "\" class=\"text-center new-account\">Stwórz konto</a>
             </div>
         </div>
     </div>
 
 ";
         
-        $__internal_5ad5d9f0411e2cb241b3423e488d06cfaca2101a90c7f9064eaa55c13fb2aa11->leave($__internal_5ad5d9f0411e2cb241b3423e488d06cfaca2101a90c7f9064eaa55c13fb2aa11_prof);
+        $__internal_9ecb105f00caa755b381e591f4aa244b54bae3219bebcec989a17e3a253f1bd1->leave($__internal_9ecb105f00caa755b381e591f4aa244b54bae3219bebcec989a17e3a253f1bd1_prof);
 
     }
 
@@ -136,7 +139,7 @@ class __TwigTemplate_cd1bb21230553ef453cb8455d9608ffa3f5346ea9cc5d5906f0d506a2da
 
     public function getDebugInfo()
     {
-        return array (  113 => 27,  109 => 26,  105 => 25,  101 => 24,  95 => 21,  91 => 20,  87 => 19,  83 => 18,  79 => 17,  75 => 16,  71 => 15,  62 => 8,  59 => 7,  45 => 5,  40 => 4,  34 => 3,  11 => 1,);
+        return array (  118 => 29,  113 => 27,  109 => 26,  105 => 25,  101 => 24,  95 => 21,  91 => 20,  87 => 19,  83 => 18,  79 => 17,  75 => 16,  71 => 15,  62 => 8,  59 => 7,  45 => 5,  40 => 4,  34 => 3,  11 => 1,);
     }
 }
 /* {%  extends 'base.html.twig' %}*/
@@ -167,7 +170,7 @@ class __TwigTemplate_cd1bb21230553ef453cb8455d9608ffa3f5346ea9cc5d5906f0d506a2da
 /*                         {{ form_errors(form.zapamietajmnie) }}*/
 /*                     {{ form_end(form) }}*/
 /*                 </div>*/
-/*                 <a href="#" class="text-center new-account">Stwórz konto</a>*/
+/*                 <a href="{{ path('Register') }}" class="text-center new-account">Stwórz konto</a>*/
 /*             </div>*/
 /*         </div>*/
 /*     </div>*/

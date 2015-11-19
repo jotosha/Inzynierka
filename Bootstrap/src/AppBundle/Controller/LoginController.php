@@ -1,7 +1,7 @@
 <?php
 namespace AppBundle\Controller;
 
-use AppBundle\Entity\Task3;
+use AppBundle\Entity\LoginEntity;
 use AppBundle\Form\Login;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -15,7 +15,7 @@ class LoginController extends Controller
 
     public function newAction()
     {
-        $task = new Task3();
+        $task = new LoginEntity();
 
         $form = $this->createForm(new Login());
 

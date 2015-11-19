@@ -9,7 +9,7 @@
 namespace AppBundle\Entity;
 
 
-class Task3
+class LoginEntity
 {
     protected $login;
 

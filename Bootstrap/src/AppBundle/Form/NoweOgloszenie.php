@@ -23,12 +23,15 @@ class NoweOgloszenie extends AbstractType
 
                 ))
                 ->add('typstancji', 'choice', array(
-                    'choices'  => array('mp' => 'Miejsce w pokoju', 'p' => 'Pokój', 'k' => 'Kawalerka'),
+                    'choices'  => array('mp' => 'Miejsce w pokoju', 'p' => 'Pokój', 'm' => 'Mieszkanie', 'k' => 'Kawalerka'),
                     'required' => false,
                 ))
                 ->add('typbudynku', 'choice', array(
                     'choices'  => array( 'b' => 'Blok', 'k' => 'Kamienica', 'jr' => 'Jednorodzinny'),
                     'required' => false,
+                ))
+                ->add('pietro', 'number', array(
+
                 ))
                 ->add('liczbapokoi', 'number', array(
 
@@ -38,6 +41,15 @@ class NoweOgloszenie extends AbstractType
                 ))
                 ->add('metraz', 'number', array(
                 ))
+                ->add('czastrwania', 'choice', array(
+                    'choices'  => array( '14' => '14 dni', '30' => '30 dni', '60' => '60 dni'),
+                    'required' => false,
+                ))
+
+
+                /*
+                 * Wyposazenie
+                 */
                 ->add('internet', 'checkbox', array(
                     'label_attr' => array(
                         'class' => 'checkbox-inline'

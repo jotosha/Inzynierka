@@ -9,7 +9,7 @@
 namespace AppBundle\Entity;
 
 
-class Task2
+class NoweOgloszenieEntity
 {
     /*
             podstawowe informacje
@@ -26,11 +26,15 @@ class Task2
 
     protected $typbudynku;
 
+    protected $pietro;
+
     protected $liczbapokoi;
 
     protected $maksliczbaosob;
 
     protected $metraz;
+
+    protected $czastrwania;
 
     /*
             wyposazenie
@@ -78,6 +82,9 @@ class Task2
     public function gettypbudynku(){
         return $this->typbudynku;
     }
+    public function getpietro(){
+        return $this->pietro;
+    }
     public function getliczbapokoi(){
         return $this->liczbapokoi;
     }
@@ -86,6 +93,9 @@ class Task2
     }
     public function getmetraz(){
         return $this->metraz;
+    }
+    public function getczastrwania(){
+        return $this->czastrwania;
     }
 
     /*

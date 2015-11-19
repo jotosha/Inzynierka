@@ -2,7 +2,7 @@
 
 namespace AppBundle\Controller;
 
-use AppBundle\Entity\Task2;
+use AppBundle\Entity\NoweOgloszenieEntity;
 use AppBundle\Form\NoweOgloszenie;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -16,7 +16,7 @@ class NoweOgloszenieController extends Controller
 
     public function newAction()
     {
-        $task = new Task2();
+        $task = new NoweOgloszenieEntity();
 
         $form = $this->createForm(new NoweOgloszenie());
 

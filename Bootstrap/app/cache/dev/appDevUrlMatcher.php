@@ -197,6 +197,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'AppBundle\\Controller\\NoweOgloszenieController::newAction',  '_route' => 'NoweOgloszenie',);
         }
 
+        // Register
+        if ($pathinfo === '/Register') {
+            return array (  '_controller' => 'AppBundle\\Controller\\RegisterController::newAction',  '_route' => 'Register',);
+        }
+
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();
     }
 }
