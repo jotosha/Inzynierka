@@ -1,0 +1,12 @@
+form{
+    position: relative;
+    top:100px;
+}
+#1{
+    position: relative;
+}
+#lolo{
+    position: relative;
+    left: 500px;
+    top: -400px;
+}

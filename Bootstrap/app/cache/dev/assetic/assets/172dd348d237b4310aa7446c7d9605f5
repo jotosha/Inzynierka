@@ -1,0 +1,24 @@
+#search-field{
+    position:relative;
+    left: -10px;
+    width: 400px;
+}
+#kategoria-field{
+
+}
+#Szukaj{
+    width: 250px;
+}
+#cenaod-field{
+    position:relative;
+    width:75px;
+
+}
+#cenado-field{
+    position:relative;
+    width:75px;
+}
+#metraz-field{
+    position:relative;
+    width:75px;
+}

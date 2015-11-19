@@ -1,0 +1,11 @@
+.form-inline .form-group{
+    margin-left: 0;
+    margin-right: 0;
+}
+#rzad{
+    position:relative;
+    left: 60px;
+}
+#Szukaj{
+    width: 200px;
+}
