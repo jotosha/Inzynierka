@@ -21,20 +21,20 @@ class __TwigTemplate_cd1bb21230553ef453cb8455d9608ffa3f5346ea9cc5d5906f0d506a2da
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_db4661ba17e70cbf319ee64ccce47bdc1f1057dd479d534a5a3bf0031706a322 = $this->env->getExtension("native_profiler");
-        $__internal_db4661ba17e70cbf319ee64ccce47bdc1f1057dd479d534a5a3bf0031706a322->enter($__internal_db4661ba17e70cbf319ee64ccce47bdc1f1057dd479d534a5a3bf0031706a322_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":Szablony:login.html.twig"));
+        $__internal_8f3817008920001c3367555b19267596dd2b6d74ffdd79b4dc21300f5f5849ba = $this->env->getExtension("native_profiler");
+        $__internal_8f3817008920001c3367555b19267596dd2b6d74ffdd79b4dc21300f5f5849ba->enter($__internal_8f3817008920001c3367555b19267596dd2b6d74ffdd79b4dc21300f5f5849ba_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":Szablony:login.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_db4661ba17e70cbf319ee64ccce47bdc1f1057dd479d534a5a3bf0031706a322->leave($__internal_db4661ba17e70cbf319ee64ccce47bdc1f1057dd479d534a5a3bf0031706a322_prof);
+        $__internal_8f3817008920001c3367555b19267596dd2b6d74ffdd79b4dc21300f5f5849ba->leave($__internal_8f3817008920001c3367555b19267596dd2b6d74ffdd79b4dc21300f5f5849ba_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_5ad5d9f0411e2cb241b3423e488d06cfaca2101a90c7f9064eaa55c13fb2aa11 = $this->env->getExtension("native_profiler");
-        $__internal_5ad5d9f0411e2cb241b3423e488d06cfaca2101a90c7f9064eaa55c13fb2aa11->enter($__internal_5ad5d9f0411e2cb241b3423e488d06cfaca2101a90c7f9064eaa55c13fb2aa11_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_2829bd8f16e71a90d9e7797f88f3ebfaf43fce179aa876d7e8829bc80f9a8ca3 = $this->env->getExtension("native_profiler");
+        $__internal_2829bd8f16e71a90d9e7797f88f3ebfaf43fce179aa876d7e8829bc80f9a8ca3->enter($__internal_2829bd8f16e71a90d9e7797f88f3ebfaf43fce179aa876d7e8829bc80f9a8ca3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "    ";
@@ -88,17 +88,17 @@ class __TwigTemplate_cd1bb21230553ef453cb8455d9608ffa3f5346ea9cc5d5906f0d506a2da
         echo "
                         ";
         // line 20
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "password", array()), 'widget', array("attr" => array("class" => "form-control", "placeholder" => "Hasło")));
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "password", array()), 'widget', array("attr" => array("class" => "form-control", "placeholder" => "Password")));
         echo "
                         ";
         // line 21
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "login", array()), 'errors');
         echo "
                         <button class=\"btn btn-lg btn-primary btn-block\" type=\"submit\">
-                            Zaloguj się</button>
+                            Zaloguj sie</button>
                         ";
         // line 24
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "zapamietajmnie", array()), 'label', array("label_attr" => array("class" => ""), "label" => "Zapamiętaj mnie"));
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "zapamietajmnie", array()), 'label', array("label_attr" => array("class" => ""), "label" => "Zapamietaj mnie"));
         echo "
                         ";
         // line 25
@@ -113,14 +113,14 @@ class __TwigTemplate_cd1bb21230553ef453cb8455d9608ffa3f5346ea9cc5d5906f0d506a2da
         echo         $this->env->getExtension('form')->renderer->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_end');
         echo "
                 </div>
-                <a href=\"#\" class=\"text-center new-account\">Stwórz konto</a>
+                <a href=\"#\" class=\"text-center new-account\">Create an account </a>
             </div>
         </div>
     </div>
 
 ";
         
-        $__internal_5ad5d9f0411e2cb241b3423e488d06cfaca2101a90c7f9064eaa55c13fb2aa11->leave($__internal_5ad5d9f0411e2cb241b3423e488d06cfaca2101a90c7f9064eaa55c13fb2aa11_prof);
+        $__internal_2829bd8f16e71a90d9e7797f88f3ebfaf43fce179aa876d7e8829bc80f9a8ca3->leave($__internal_2829bd8f16e71a90d9e7797f88f3ebfaf43fce179aa876d7e8829bc80f9a8ca3_prof);
 
     }
 
@@ -158,16 +158,16 @@ class __TwigTemplate_cd1bb21230553ef453cb8455d9608ffa3f5346ea9cc5d5906f0d506a2da
 /*                         {{ form_widget(form.login, {'attr': {'class':'form-control' , 'placeholder' : 'Email'}}) }}*/
 /*                         {{ form_errors(form.login) }}*/
 /*                         {{ form_label(form.password, '', {'label_attr': {'class': ''}}) }}*/
-/*                         {{ form_widget(form.password, {'attr': {'class':'form-control' , 'placeholder' : 'Hasło'}}) }}*/
+/*                         {{ form_widget(form.password, {'attr': {'class':'form-control' , 'placeholder' : 'Password'}}) }}*/
 /*                         {{ form_errors(form.login) }}*/
 /*                         <button class="btn btn-lg btn-primary btn-block" type="submit">*/
-/*                             Zaloguj się</button>*/
-/*                         {{ form_label(form.zapamietajmnie, 'Zapamiętaj mnie', {'label_attr': {'class': ''}}) }}*/
+/*                             Zaloguj sie</button>*/
+/*                         {{ form_label(form.zapamietajmnie, 'Zapamietaj mnie', {'label_attr': {'class': ''}}) }}*/
 /*                         {{ form_widget(form.zapamietajmnie) }}*/
 /*                         {{ form_errors(form.zapamietajmnie) }}*/
 /*                     {{ form_end(form) }}*/
 /*                 </div>*/
-/*                 <a href="#" class="text-center new-account">Stwórz konto</a>*/
+/*                 <a href="#" class="text-center new-account">Create an account </a>*/
 /*             </div>*/
 /*         </div>*/
 /*     </div>*/

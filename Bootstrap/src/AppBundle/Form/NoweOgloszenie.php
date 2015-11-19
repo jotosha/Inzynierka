@@ -23,12 +23,10 @@ class NoweOgloszenie extends AbstractType
 
                 ))
                 ->add('typstancji', 'choice', array(
-                    'choices'  => array('mp' => 'Miejsce w pokoju', 'p' => 'Pokój', 'k' => 'Kawalerka'),
-                    'required' => false,
+                    'choices'  => array('k' => 'Kawalerka', 'p' => 'Pokoj', 'mp' => 'Miejsce w Pokoju'),
                 ))
                 ->add('typbudynku', 'choice', array(
-                    'choices'  => array( 'b' => 'Blok', 'k' => 'Kamienica', 'jr' => 'Jednorodzinny'),
-                    'required' => false,
+                    'choices'  => array('k' => 'Kamienica', 'b' => 'Blok', 'jr' => 'Jednorodzinny'),
                 ))
                 ->add('liczbapokoi', 'number', array(
 
@@ -54,10 +52,8 @@ class NoweOgloszenie extends AbstractType
                     )
                 ))
                 ->add('kablowka', 'checkbox', array(
-                    'label' => 'TV-kablowa',
                     'label_attr' => array(
                         'class' => 'checkbox-inline'
-
                     )
                 ))
                 ->add('pralka', 'checkbox', array(
@@ -66,7 +62,6 @@ class NoweOgloszenie extends AbstractType
                     )
                 ))
                 ->add('lodowka', 'checkbox', array(
-                    'label' => 'Lodówka',
                     'label_attr' => array(
                         'class' => 'checkbox-inline'
                     )
@@ -97,7 +92,6 @@ class NoweOgloszenie extends AbstractType
                     )
                 ))
                 ->add('garaz', 'checkbox', array(
-                    'label' => 'Garaż',
                     'label_attr' => array(
                         'class' => 'checkbox-inline'
                     )
@@ -125,13 +119,11 @@ class NoweOgloszenie extends AbstractType
                     )
                 ))
                 ->add('mezczyzni', 'checkbox', array(
-                    'label' => 'Mężczyźni',
                     'label_attr' => array(
                         'class' => 'checkbox-inline'
                     )
                 ))
                 ->add('palacy', 'checkbox', array(
-                    'label' => 'Palący',
                     'label_attr' => array(
                         'class' => 'checkbox-inline'
                     )
@@ -147,7 +139,6 @@ class NoweOgloszenie extends AbstractType
                     )
                 ))
                 ->add('pracujacy', 'checkbox', array(
-                    'label' => 'Pracujący',
                     'label_attr' => array(
                         'class' => 'checkbox-inline'
                     )

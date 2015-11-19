@@ -44,27 +44,6 @@ return array (
       ),
     ),
   ),
-  6794198 => 
-  array (
-    0 => 
-    array (
-      0 => '@AppBundle/Resources/css/login.css',
-    ),
-    1 => 
-    array (
-      0 => 'cssrewrite',
-    ),
-    2 => 
-    array (
-      'output' => '_controller/css/6794198.css',
-      'name' => '6794198',
-      'debug' => NULL,
-      'combine' => NULL,
-      'vars' => 
-      array (
-      ),
-    ),
-  ),
   '15e01ef' => 
   array (
     0 => 

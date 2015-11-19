@@ -17,8 +17,8 @@ class __TwigTemplate_341815fe94b64619489ffd1f7ddc2a4efc1a81cbc6f23d0fcabdc6b81f7
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_cc40285e50af19aa682edc61ba28dce64d9732fd9fc04b3778428f64d086c865 = $this->env->getExtension("native_profiler");
-        $__internal_cc40285e50af19aa682edc61ba28dce64d9732fd9fc04b3778428f64d086c865->enter($__internal_cc40285e50af19aa682edc61ba28dce64d9732fd9fc04b3778428f64d086c865_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "base.html.twig"));
+        $__internal_6b461697fa54986bf4ecddf75a881640f42c9bfdb49f860ae6c6818e2e4ca59f = $this->env->getExtension("native_profiler");
+        $__internal_6b461697fa54986bf4ecddf75a881640f42c9bfdb49f860ae6c6818e2e4ca59f->enter($__internal_6b461697fa54986bf4ecddf75a881640f42c9bfdb49f860ae6c6818e2e4ca59f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "base.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -60,7 +60,6 @@ class __TwigTemplate_341815fe94b64619489ffd1f7ddc2a4efc1a81cbc6f23d0fcabdc6b81f7
         $this->displayBlock('body', $context, $blocks);
         // line 16
         echo "
-
         <nav class=\"navbar navbar-default navbar-fixed-top\">
             <div class=\"container\">
                 <div class=\"navbar-header\">
@@ -70,19 +69,19 @@ class __TwigTemplate_341815fe94b64619489ffd1f7ddc2a4efc1a81cbc6f23d0fcabdc6b81f7
                         <span class=\"icon-bar\"></span>
                     </button>
                     <a class=\"navbar-brand\" href=\"";
-        // line 26
+        // line 25
         echo $this->env->getExtension('routing')->getPath("StronaGlowna");
-        echo "\">Cztery Ściany</a>
+        echo "\">Cztery �ciany</a>
                 </div>
                 <div class=\"collapse navbar-collapse\" id=\"myNavbar\">
                     <ul class=\"nav navbar-nav navbar-right\">
                         <li><a href=\"";
-        // line 30
+        // line 29
         echo $this->env->getExtension('routing')->getPath("NoweOgloszenie");
-        echo "\">DODAJ OGŁOSZENIE</a></li>
+        echo "\">DODAJ OGLOSZENIE</a></li>
                         <li><a href=\"#\">PROFIL</a></li>
                         <li><a href=\"";
-        // line 32
+        // line 31
         echo $this->env->getExtension('routing')->getPath("Login");
         echo "\">ZALOGUJ</a></li>
                     </ul>
@@ -95,7 +94,7 @@ class __TwigTemplate_341815fe94b64619489ffd1f7ddc2a4efc1a81cbc6f23d0fcabdc6b81f7
                 <div class=\"collapse navbar-collapse\" id=\"myNavbar\">
                     <ul class=\"nav navbar-nav navbar-right\">
                         <li><a href=\"#\">Regulamin</a></li>
-                        <li><a href=\"#\">Polityka prywatności</a></li>
+                        <li><a href=\"#\">Polityka prywatnosci</a></li>
                         <li><a href=\"#\">Kontakt</a></li>
                     </ul>
                 </div>
@@ -105,30 +104,30 @@ class __TwigTemplate_341815fe94b64619489ffd1f7ddc2a4efc1a81cbc6f23d0fcabdc6b81f7
 </html>
 ";
         
-        $__internal_cc40285e50af19aa682edc61ba28dce64d9732fd9fc04b3778428f64d086c865->leave($__internal_cc40285e50af19aa682edc61ba28dce64d9732fd9fc04b3778428f64d086c865_prof);
+        $__internal_6b461697fa54986bf4ecddf75a881640f42c9bfdb49f860ae6c6818e2e4ca59f->leave($__internal_6b461697fa54986bf4ecddf75a881640f42c9bfdb49f860ae6c6818e2e4ca59f_prof);
 
     }
 
     // line 5
     public function block_title($context, array $blocks = array())
     {
-        $__internal_1387f34bbeebe8e7c2ca4df9ada9eb7b0ab8cfa5b221905452831cbb29bbdae9 = $this->env->getExtension("native_profiler");
-        $__internal_1387f34bbeebe8e7c2ca4df9ada9eb7b0ab8cfa5b221905452831cbb29bbdae9->enter($__internal_1387f34bbeebe8e7c2ca4df9ada9eb7b0ab8cfa5b221905452831cbb29bbdae9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_c3b30eb18a30651b5a1a6c57a2d327d0c7a92a2ff4367e02371a8de16ac3dd24 = $this->env->getExtension("native_profiler");
+        $__internal_c3b30eb18a30651b5a1a6c57a2d327d0c7a92a2ff4367e02371a8de16ac3dd24->enter($__internal_c3b30eb18a30651b5a1a6c57a2d327d0c7a92a2ff4367e02371a8de16ac3dd24_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Cztery Ściany";
+        echo "Cztery �ciany";
         
-        $__internal_1387f34bbeebe8e7c2ca4df9ada9eb7b0ab8cfa5b221905452831cbb29bbdae9->leave($__internal_1387f34bbeebe8e7c2ca4df9ada9eb7b0ab8cfa5b221905452831cbb29bbdae9_prof);
+        $__internal_c3b30eb18a30651b5a1a6c57a2d327d0c7a92a2ff4367e02371a8de16ac3dd24->leave($__internal_c3b30eb18a30651b5a1a6c57a2d327d0c7a92a2ff4367e02371a8de16ac3dd24_prof);
 
     }
 
     // line 15
     public function block_body($context, array $blocks = array())
     {
-        $__internal_8674c23755ec4bea91052e1e32532ead7dcb04f7f6c0f0defe7a27b516dfc1bd = $this->env->getExtension("native_profiler");
-        $__internal_8674c23755ec4bea91052e1e32532ead7dcb04f7f6c0f0defe7a27b516dfc1bd->enter($__internal_8674c23755ec4bea91052e1e32532ead7dcb04f7f6c0f0defe7a27b516dfc1bd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_7b398c0ff718af1c1988f99cf12281102d47ff7928fd471807a5611d34204297 = $this->env->getExtension("native_profiler");
+        $__internal_7b398c0ff718af1c1988f99cf12281102d47ff7928fd471807a5611d34204297->enter($__internal_7b398c0ff718af1c1988f99cf12281102d47ff7928fd471807a5611d34204297_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         
-        $__internal_8674c23755ec4bea91052e1e32532ead7dcb04f7f6c0f0defe7a27b516dfc1bd->leave($__internal_8674c23755ec4bea91052e1e32532ead7dcb04f7f6c0f0defe7a27b516dfc1bd_prof);
+        $__internal_7b398c0ff718af1c1988f99cf12281102d47ff7928fd471807a5611d34204297->leave($__internal_7b398c0ff718af1c1988f99cf12281102d47ff7928fd471807a5611d34204297_prof);
 
     }
 
@@ -144,14 +143,14 @@ class __TwigTemplate_341815fe94b64619489ffd1f7ddc2a4efc1a81cbc6f23d0fcabdc6b81f7
 
     public function getDebugInfo()
     {
-        return array (  125 => 15,  113 => 5,  86 => 32,  81 => 30,  74 => 26,  62 => 16,  60 => 15,  56 => 13,  42 => 11,  38 => 10,  30 => 5,  24 => 1,);
+        return array (  124 => 15,  112 => 5,  85 => 31,  80 => 29,  73 => 25,  62 => 16,  60 => 15,  56 => 13,  42 => 11,  38 => 10,  30 => 5,  24 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
 /* <html>*/
 /*     <head>*/
 /*         <meta charset="UTF-8" />*/
-/*         <title>{% block title %}Cztery Ściany{% endblock %}</title>*/
+/*         <title>{% block title %}Cztery �ciany{% endblock %}</title>*/
 /*         <meta name="viewport" content="width=device-width, initial-scale=1">*/
 /*         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">*/
 /*         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>*/
@@ -163,7 +162,6 @@ class __TwigTemplate_341815fe94b64619489ffd1f7ddc2a4efc1a81cbc6f23d0fcabdc6b81f7
 /*     <body>*/
 /*     {% block body %}{% endblock %}*/
 /* */
-/* */
 /*         <nav class="navbar navbar-default navbar-fixed-top">*/
 /*             <div class="container">*/
 /*                 <div class="navbar-header">*/
@@ -172,11 +170,11 @@ class __TwigTemplate_341815fe94b64619489ffd1f7ddc2a4efc1a81cbc6f23d0fcabdc6b81f7
 /*                         <span class="icon-bar"></span>*/
 /*                         <span class="icon-bar"></span>*/
 /*                     </button>*/
-/*                     <a class="navbar-brand" href="{{ path('StronaGlowna') }}">Cztery Ściany</a>*/
+/*                     <a class="navbar-brand" href="{{ path('StronaGlowna') }}">Cztery �ciany</a>*/
 /*                 </div>*/
 /*                 <div class="collapse navbar-collapse" id="myNavbar">*/
 /*                     <ul class="nav navbar-nav navbar-right">*/
-/*                         <li><a href="{{ path('NoweOgloszenie') }}">DODAJ OGŁOSZENIE</a></li>*/
+/*                         <li><a href="{{ path('NoweOgloszenie') }}">DODAJ OGLOSZENIE</a></li>*/
 /*                         <li><a href="#">PROFIL</a></li>*/
 /*                         <li><a href="{{ path('Login') }}">ZALOGUJ</a></li>*/
 /*                     </ul>*/
@@ -189,7 +187,7 @@ class __TwigTemplate_341815fe94b64619489ffd1f7ddc2a4efc1a81cbc6f23d0fcabdc6b81f7
 /*                 <div class="collapse navbar-collapse" id="myNavbar">*/
 /*                     <ul class="nav navbar-nav navbar-right">*/
 /*                         <li><a href="#">Regulamin</a></li>*/
-/*                         <li><a href="#">Polityka prywatności</a></li>*/
+/*                         <li><a href="#">Polityka prywatnosci</a></li>*/
 /*                         <li><a href="#">Kontakt</a></li>*/
 /*                     </ul>*/
 /*                 </div>*/
