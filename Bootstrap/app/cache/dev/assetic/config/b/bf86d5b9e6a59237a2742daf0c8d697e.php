@@ -86,4 +86,25 @@ return array (
       ),
     ),
   ),
+  '3e238f1' => 
+  array (
+    0 => 
+    array (
+      0 => '@AppBundle/Resources/css/register.css*',
+    ),
+    1 => 
+    array (
+      0 => 'cssrewrite',
+    ),
+    2 => 
+    array (
+      'output' => '_controller/css/3e238f1.css',
+      'name' => '3e238f1',
+      'debug' => NULL,
+      'combine' => NULL,
+      'vars' => 
+      array (
+      ),
+    ),
+  ),
 );

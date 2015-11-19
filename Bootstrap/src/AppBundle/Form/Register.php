@@ -10,8 +10,17 @@ class Register extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('search', 'text', array(
-            'label' => ' '
+        $builder->add('email', 'email', array(
+        ));
+        $builder->add('haslo', 'password', array(
+        ));
+        $builder->add('imie', 'text', array(
+        ));
+        $builder->add('nazwisko', 'text', array(
+        ));
+        $builder->add('dataurodzenia', 'birthday', array(
+        ));
+        $builder->add('telefon', 'number', array(
         ));
     }
 

@@ -11,5 +11,37 @@ namespace AppBundle\Entity;
 
 class RegisterEntity
 {
+    protected $email;
+
+    protected $haslo;
+
+    protected $imie;
+
+    protected $nazwisko;
+
+    protected $dataurodzenia;
+
+    protected $telefon;
+
+    public function getemail()
+    {
+        return $this->email;
+    }
+
+    public function gethaslo(){
+        return $this->haslo;
+    }
+    public function getimie(){
+        return $this->imie;
+    }
+    public function getnazwisko(){
+        return $this->nazwisko;
+    }
+    public function getdataurodzenia(){
+        return $this->dataurodzenia;
+    }
+    public function gettelefon(){
+        return $this->telefon;
+    }
 
 }

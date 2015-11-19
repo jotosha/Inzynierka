@@ -2,6 +2,8 @@
 namespace AppBundle\Controller;
 
 
+use AppBundle\Entity\RegisterEntity;
+use AppBundle\Form\Register;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
@@ -14,12 +16,12 @@ class RegisterController extends Controller
 
     public function newAction()
     {
-        //$task = new Task3();
+        $task = new RegisterEntity();
 
-        //$form = $this->createForm(new Login());
+        $form = $this->createForm(new Register());
 
         return $this->render(':Szablony:register.html.twig', array(
-            //'form' => $form->createView(),
+            'form' => $form->createView(),
         ));
     }
 
