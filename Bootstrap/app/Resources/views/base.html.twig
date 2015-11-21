@@ -10,6 +10,12 @@
         {% stylesheets '@AppBundle/Resources/css/style.css*' filter='cssrewrite' %}
         <link rel="stylesheet" href="{{ asset_url }}" />
         {% endstylesheets %}
+        {% stylesheets '@AppBundle/Resources/public/plugins/bootstrap-datepicker-master/dist/css/bootstrap-datepicker.css*' filter='cssrewrite' %}
+        <link rel="stylesheet" href="{{ asset_url }}" />
+        {% endstylesheets %}
+        {% javascripts '@AppBundle/Resources/public/plugins/bootstrap-datepicker-master/dist/js/bootstrap-datepicker.js' %}
+        <link rel="javascript" href="{{ asset_url }}" />
+        {% endjavascripts %}
     </head>
     <body>
     {% block body %}{% endblock %}

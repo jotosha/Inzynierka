@@ -5,6 +5,12 @@
     <link rel="stylesheet" href="{{ asset_url }}" />
     {% endstylesheets %}
     {% form_theme form 'bootstrap_3_layout.html.twig' %}
+    {% stylesheets '@AppBundle/Resources/public/plugins/bootstrap-datepicker-master/dist/css/bootstrap-datepicker.css*' filter='cssrewrite' %}
+    <link rel="stylesheet" href="{{ asset_url }}" />
+    {% endstylesheets %}
+    {% javascripts '@AppBundle/Resources/public/plugins/bootstrap-datepicker-master/dist/js/bootstrap-datepicker.js' %}
+    <link rel="javascript" href="{{ asset_url }}" />
+    {% endjavascripts %}
 
 
     <div class="container" >
@@ -23,7 +29,7 @@
                     <span class="badge">*</span>
                             {{ form_label(form.wolneod, 'Wolne od:', {'label_attr': {'class': 'col-md-4 control-label '}}) }}
                             <div class="col-sm-4">
-                                {{ form_widget(form.wolneod, {'attr': {'class':'form-control'}}) }}
+                                {{ form_widget(form.wolneod, {'attr': {'class':''}}) }}
                                 {{ form_errors(form.wolneod) }}
                             </div>
                     </div>

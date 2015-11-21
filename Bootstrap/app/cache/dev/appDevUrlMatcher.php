@@ -41,6 +41,43 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
             }
 
+            if (0 === strpos($pathinfo, '/css/c263a4c')) {
+                // _assetic_c263a4c
+                if ($pathinfo === '/css/c263a4c.css') {
+                    return array (  '_controller' => 'assetic.controller:render',  'name' => 'c263a4c',  'pos' => NULL,  '_format' => 'css',  '_route' => '_assetic_c263a4c',);
+                }
+
+                if (0 === strpos($pathinfo, '/css/c263a4c_part_1_bootstrap-datepicker')) {
+                    // _assetic_c263a4c_0
+                    if ($pathinfo === '/css/c263a4c_part_1_bootstrap-datepicker_1.css') {
+                        return array (  '_controller' => 'assetic.controller:render',  'name' => 'c263a4c',  'pos' => 0,  '_format' => 'css',  '_route' => '_assetic_c263a4c_0',);
+                    }
+
+                    // _assetic_c263a4c_1
+                    if ($pathinfo === '/css/c263a4c_part_1_bootstrap-datepicker.css_2.css') {
+                        return array (  '_controller' => 'assetic.controller:render',  'name' => 'c263a4c',  'pos' => 1,  '_format' => 'css',  '_route' => '_assetic_c263a4c_1',);
+                    }
+
+                }
+
+            }
+
+        }
+
+        if (0 === strpos($pathinfo, '/js/2858745')) {
+            // _assetic_2858745
+            if ($pathinfo === '/js/2858745.js') {
+                return array (  '_controller' => 'assetic.controller:render',  'name' => 2858745,  'pos' => NULL,  '_format' => 'js',  '_route' => '_assetic_2858745',);
+            }
+
+            // _assetic_2858745_0
+            if ($pathinfo === '/js/2858745_bootstrap-datepicker_1.js') {
+                return array (  '_controller' => 'assetic.controller:render',  'name' => 2858745,  'pos' => 0,  '_format' => 'js',  '_route' => '_assetic_2858745_0',);
+            }
+
+        }
+
+        if (0 === strpos($pathinfo, '/css')) {
             if (0 === strpos($pathinfo, '/css/9b0345b')) {
                 // _assetic_9b0345b
                 if ($pathinfo === '/css/9b0345b.css') {

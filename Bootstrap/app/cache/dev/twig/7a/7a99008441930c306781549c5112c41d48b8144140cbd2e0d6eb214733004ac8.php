@@ -21,20 +21,20 @@ class __TwigTemplate_85c8b482b084c1b6312cd497f1c4fb90ada8638b61c27a1d7cd6f6023a5
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_9a3e6e1accd0fe96ec266364504c6380cf5665bce45adce6632d499a45a4c11a = $this->env->getExtension("native_profiler");
-        $__internal_9a3e6e1accd0fe96ec266364504c6380cf5665bce45adce6632d499a45a4c11a->enter($__internal_9a3e6e1accd0fe96ec266364504c6380cf5665bce45adce6632d499a45a4c11a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":Szablony:register.html.twig"));
+        $__internal_8e7c275e5b09a8c1c6f517f6a532e1e82e01b3a167260bcbe31b1f3600e4bb93 = $this->env->getExtension("native_profiler");
+        $__internal_8e7c275e5b09a8c1c6f517f6a532e1e82e01b3a167260bcbe31b1f3600e4bb93->enter($__internal_8e7c275e5b09a8c1c6f517f6a532e1e82e01b3a167260bcbe31b1f3600e4bb93_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":Szablony:register.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_9a3e6e1accd0fe96ec266364504c6380cf5665bce45adce6632d499a45a4c11a->leave($__internal_9a3e6e1accd0fe96ec266364504c6380cf5665bce45adce6632d499a45a4c11a_prof);
+        $__internal_8e7c275e5b09a8c1c6f517f6a532e1e82e01b3a167260bcbe31b1f3600e4bb93->leave($__internal_8e7c275e5b09a8c1c6f517f6a532e1e82e01b3a167260bcbe31b1f3600e4bb93_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_e838df32bf978cf54b292bd6b35651bb23fbef035e3f9733b03ca7a39521d9e3 = $this->env->getExtension("native_profiler");
-        $__internal_e838df32bf978cf54b292bd6b35651bb23fbef035e3f9733b03ca7a39521d9e3->enter($__internal_e838df32bf978cf54b292bd6b35651bb23fbef035e3f9733b03ca7a39521d9e3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_9fb88b32d598b7eba374212d460a64e74d11ad8e15fa75afe31cd593de58c1e7 = $this->env->getExtension("native_profiler");
+        $__internal_9fb88b32d598b7eba374212d460a64e74d11ad8e15fa75afe31cd593de58c1e7->enter($__internal_9fb88b32d598b7eba374212d460a64e74d11ad8e15fa75afe31cd593de58c1e7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "    ";
@@ -42,146 +42,226 @@ class __TwigTemplate_85c8b482b084c1b6312cd497f1c4fb90ada8638b61c27a1d7cd6f6023a5
             // asset "3e238f1_0"
             $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_3e238f1_0") : $this->env->getExtension('asset')->getAssetUrl("_controller/css/3e238f1_part_1_register_1.css");
             // line 5
-            echo "        <link rel=\"stylesheet\" href=\"";
+            echo "    <link rel=\"stylesheet\" href=\"";
             echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
             echo "\" />
     ";
         } else {
             // asset "3e238f1"
             $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_3e238f1") : $this->env->getExtension('asset')->getAssetUrl("_controller/css/3e238f1.css");
-            echo "        <link rel=\"stylesheet\" href=\"";
+            echo "    <link rel=\"stylesheet\" href=\"";
             echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
             echo "\" />
     ";
         }
         unset($context["asset_url"]);
         // line 7
-        echo "    ";
+        echo "
+
+    ";
+        // line 9
         $this->env->getExtension('form')->renderer->setTheme((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), array(0 => "bootstrap_3_layout.html.twig"));
-        // line 8
-        echo "
-    <div class=\"container\">
-        ";
         // line 10
-        echo         $this->env->getExtension('form')->renderer->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_start', array("attr" => array("class" => "form-horizontal style-form", "role" => "form")));
         echo "
+
+    <div class=\"container\" id=\"kontener\">
         <div class=\"row\">
-            <div class=\"page-header\">
-                <h2>Rejestracja</h2>
-            </div>
-                <div class=\"row\">
-                    <div class=\"col-sm-4 col-md-3 col-md-offset-4\">
-                            <div class=\"form-group\">
-                                ";
+            <div class=\"col-sm-8 col-sm-offset-2\">
+                <div class=\"page-header\">
+                    <h2>Rejestracja</h2>
+                </div>
+                ";
         // line 18
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "email", array()), 'label', array("label_attr" => array("class" => "col-md-4 control-label "), "label" => "Email:"));
+        echo         $this->env->getExtension('form')->renderer->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_start', array("attr" => array("class" => "form-horizontal", "role" => "form", "id" => "defaultForm")));
         echo "
-                                <div class=\"col-sm-8\">
-                                    ";
+                <div class=\"form-group\">
+                    ";
         // line 20
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "email", array()), 'widget', array("attr" => array("class" => "form-control")));
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "imie", array()), 'label', array("label_attr" => array("class" => "col-sm-3 control-label"), "label" => "Imie i nazwisko:"));
         echo "
-                                    ";
-        // line 21
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "email", array()), 'errors');
+                    <div class=\"col-sm-4\">
+                        ";
+        // line 22
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "imie", array()), 'widget', array("attr" => array("class" => "form-control", "placeholder" => "Imie")));
         echo "
-                                </div>
-                            </div>
-                            <div class=\"form-group\">
-                                ";
-        // line 25
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "haslo", array()), 'label', array("label_attr" => array("class" => "col-md-4 control-label "), "label" => "Hasło:"));
-        echo "
-                                <div class=\"col-sm-8\">
-                                    ";
-        // line 27
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "haslo", array()), 'widget', array("attr" => array("class" => "form-control")));
-        echo "
-                                    ";
-        // line 28
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "haslo", array()), 'errors');
-        echo "
-                                </div>
-                            </div>
-                            <div class=\"form-group\">
-                                ";
-        // line 32
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "imie", array()), 'label', array("label_attr" => array("class" => "col-md-4 control-label "), "label" => "Imie:"));
-        echo "
-                                <div class=\"col-sm-8\">
-                                    ";
-        // line 34
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "imie", array()), 'widget', array("attr" => array("class" => "form-control")));
-        echo "
-                                    ";
-        // line 35
+                        ";
+        // line 23
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "imie", array()), 'errors');
         echo "
-                                </div>
-                            </div>
-                            <div class=\"form-group\">
-                                ";
-        // line 39
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "nazwisko", array()), 'label', array("label_attr" => array("class" => "col-md-4 control-label "), "label" => "Nazwisko:"));
+                    </div>
+                    <div class=\"col-sm-4\">
+                        ";
+        // line 26
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "nazwisko", array()), 'label');
         echo "
-                                <div class=\"col-sm-8\">
-                                    ";
-        // line 41
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "nazwisko", array()), 'widget', array("attr" => array("class" => "form-control")));
+                        ";
+        // line 27
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "nazwisko", array()), 'widget', array("attr" => array("class" => "form-control", "placeholder" => "Nazwisko")));
         echo "
-                                    ";
-        // line 42
+                        ";
+        // line 28
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "nazwisko", array()), 'errors');
         echo "
-                                </div>
-                            </div>
-                            <div class=\"form-group\">
-                                ";
-        // line 46
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "dataurodzenia", array()), 'label', array("label_attr" => array("class" => "col-md-4 control-label "), "label" => "Data urodzenia:"));
-        echo "
-                                <div class=\"col-sm-8\">
-                                    ";
-        // line 48
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "dataurodzenia", array()), 'widget', array("attr" => array("class" => "")));
-        echo "
-                                    ";
-        // line 49
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "dataurodzenia", array()), 'errors');
-        echo "
-                                </div>
-                            </div>
-                            <div class=\"form-group\">
-                                ";
-        // line 53
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "telefon", array()), 'label', array("label_attr" => array("class" => "col-md-4 control-label "), "label" => "Numer telefonu:"));
-        echo "
-                                <div class=\"col-sm-8\">
-                                    ";
-        // line 55
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "telefon", array()), 'widget', array("attr" => array("class" => "form-control")));
-        echo "
-                                    ";
-        // line 56
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "telefon", array()), 'errors');
-        echo "
-                                </div>
-                            </div>
-                            <div class=\"row\">
-                                <button class=\"btn btn-lg btn-primary btn-block\" type=\"submit\">
-                                    Stwórz konto</button>
-                            </div>
                     </div>
                 </div>
-         </div>
-        ";
-        // line 66
+
+                <div class=\"form-group\">
+                    ";
+        // line 33
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "nazwauzytkownika", array()), 'label', array("label_attr" => array("class" => "col-sm-3 control-label"), "label" => "Nazwa użytkownika:"));
+        echo "
+                    <div class=\"col-sm-5\">
+                        ";
+        // line 35
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "nazwauzytkownika", array()), 'widget', array("attr" => array("class" => "form-control")));
+        echo "
+                        ";
+        // line 36
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "nazwauzytkownika", array()), 'errors');
+        echo "
+                    </div>
+                </div>
+
+                <div class=\"form-group\">
+                    ";
+        // line 41
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "email", array()), 'label', array("label_attr" => array("class" => "col-sm-3 control-label"), "label" => "Adres Email:"));
+        echo "
+                    <div class=\"col-sm-5\">
+                        ";
+        // line 43
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "email", array()), 'widget', array("attr" => array("class" => "form-control")));
+        echo "
+                        ";
+        // line 44
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "email", array()), 'errors');
+        echo "
+                    </div>
+                </div>
+
+                <div class=\"form-group\">
+                    ";
+        // line 49
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "haslo", array()), 'label', array("label_attr" => array("class" => "col-sm-3 control-label"), "label" => "Hasło:"));
+        echo "
+                    <div class=\"col-sm-5\">
+                        ";
+        // line 51
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "haslo", array()), 'widget', array("attr" => array("class" => "form-control")));
+        echo "
+                        ";
+        // line 52
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "haslo", array()), 'errors');
+        echo "
+                    </div>
+                </div>
+
+                <div class=\"form-group\">
+                    ";
+        // line 57
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "telefon", array()), 'label', array("label_attr" => array("class" => "col-sm-3 control-label"), "label" => "Numer telefonu:"));
+        echo "
+                    <div class=\"col-sm-5\">
+                        ";
+        // line 59
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "telefon", array()), 'widget', array("attr" => array("class" => "form-control")));
+        echo "
+                        ";
+        // line 60
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "telefon", array()), 'errors');
+        echo "
+                    </div>
+                </div>
+
+                <div class=\"form-group\">
+                    ";
+        // line 65
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "captcha", array()), 'label', array("label_attr" => array("class" => "col-sm-3 control-label", "id" => "captchaOperation"), "label" => " "));
+        echo "
+                    <div class=\"col-sm-2\">
+                        ";
+        // line 67
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "captcha", array()), 'widget', array("attr" => array("class" => "form-control", "id" => "captchaOperation")));
+        echo "
+                        ";
+        // line 68
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "captcha", array()), 'errors');
+        echo "
+                    </div>
+                </div>
+
+                <div class=\"form-group\">
+                    <div class=\"col-sm-6 col-sm-offset-3\">
+                        <div class=\"checkbox\">
+                            ";
+        // line 75
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "akceptacja", array()), 'label', array("label_attr" => array("class" => "col-sm-3 control-label"), "label" => "Akceptuje regulamin serwisu"));
+        echo "
+                            ";
+        // line 76
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "akceptacja", array()), 'widget', array("attr" => array("class" => "")));
+        echo "
+                            ";
+        // line 77
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "akceptacja", array()), 'errors');
+        echo "
+                        </div>
+                    </div>
+                </div>
+
+                <div class=\"form-group\">
+                    <div class=\"col-sm-9 col-sm-offset-3\">
+                        <button type=\"submit\" class=\"btn btn-primary btn-lg\" name=\"signup\" value=\"Sign up\">Załóż konto</button>
+                    </div>
+                </div>
+                ";
+        // line 87
         echo         $this->env->getExtension('form')->renderer->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_end');
         echo "
+            </div>
+        </div>
     </div>
+    <script>
+        \$(document).ready(function() {
+            // Generate a simple captcha
+            function randomNumber(min, max) {
+                return Math.floor(Math.random() * (max - min + 1) + min);
+            };
+            \$('#captchaOperation').html([randomNumber(1, 10), '+', randomNumber(1, 20), '='].join(' '));
+
+            \$('#defaultForm').formValidation({
+                message: 'This value is not valid',
+                icon: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon glyphicon-remove',
+                    validating: 'glyphicon glyphicon-refresh'
+                },
+                fields: {
+                    captcha: {
+                        validators: {
+                            callback: {
+                                message: 'Wrong answer',
+                                callback: function(value, validator, \$field) {
+                                    var items = \$('#captchaOperation').html().split(' '), sum = parseInt(items[0]) + parseInt(items[2]);
+                                    return value == sum;
+                                }
+                            }
+                        }
+                    },
+                    agree: {
+                        validators: {
+                            notEmpty: {
+                                message: 'You must agree with the terms and conditions'
+                            }
+                        }
+                    }
+                }
+            });
+        });
+    </script>
 ";
         
-        $__internal_e838df32bf978cf54b292bd6b35651bb23fbef035e3f9733b03ca7a39521d9e3->leave($__internal_e838df32bf978cf54b292bd6b35651bb23fbef035e3f9733b03ca7a39521d9e3_prof);
+        $__internal_9fb88b32d598b7eba374212d460a64e74d11ad8e15fa75afe31cd593de58c1e7->leave($__internal_9fb88b32d598b7eba374212d460a64e74d11ad8e15fa75afe31cd593de58c1e7_prof);
 
     }
 
@@ -197,74 +277,135 @@ class __TwigTemplate_85c8b482b084c1b6312cd497f1c4fb90ada8638b61c27a1d7cd6f6023a5
 
     public function getDebugInfo()
     {
-        return array (  179 => 66,  166 => 56,  162 => 55,  157 => 53,  150 => 49,  146 => 48,  141 => 46,  134 => 42,  130 => 41,  125 => 39,  118 => 35,  114 => 34,  109 => 32,  102 => 28,  98 => 27,  93 => 25,  86 => 21,  82 => 20,  77 => 18,  66 => 10,  62 => 8,  59 => 7,  45 => 5,  40 => 4,  34 => 3,  11 => 1,);
+        return array (  219 => 87,  206 => 77,  202 => 76,  198 => 75,  188 => 68,  184 => 67,  179 => 65,  171 => 60,  167 => 59,  162 => 57,  154 => 52,  150 => 51,  145 => 49,  137 => 44,  133 => 43,  128 => 41,  120 => 36,  116 => 35,  111 => 33,  103 => 28,  99 => 27,  95 => 26,  89 => 23,  85 => 22,  80 => 20,  75 => 18,  65 => 10,  63 => 9,  59 => 7,  45 => 5,  40 => 4,  34 => 3,  11 => 1,);
     }
 }
 /* {% extends 'base.html.twig' %}*/
 /* */
 /* {% block body %}*/
 /*     {% stylesheets '@AppBundle/Resources/css/register.css*' filter='cssrewrite' %}*/
-/*         <link rel="stylesheet" href="{{ asset_url }}" />*/
+/*     <link rel="stylesheet" href="{{ asset_url }}" />*/
 /*     {% endstylesheets %}*/
+/* */
+/* */
 /*     {% form_theme form 'bootstrap_3_layout.html.twig' %}*/
 /* */
-/*     <div class="container">*/
-/*         {{ form_start(form, {'attr': {'class': 'form-horizontal style-form', 'role': 'form'}}) }}*/
+/* */
+/*     <div class="container" id="kontener">*/
 /*         <div class="row">*/
-/*             <div class="page-header">*/
-/*                 <h2>Rejestracja</h2>*/
-/*             </div>*/
-/*                 <div class="row">*/
-/*                     <div class="col-sm-4 col-md-3 col-md-offset-4">*/
-/*                             <div class="form-group">*/
-/*                                 {{ form_label(form.email, 'Email:', {'label_attr': {'class': 'col-md-4 control-label '}}) }}*/
-/*                                 <div class="col-sm-8">*/
-/*                                     {{ form_widget(form.email, {'attr': {'class':'form-control' }}) }}*/
-/*                                     {{ form_errors(form.email) }}*/
-/*                                 </div>*/
-/*                             </div>*/
-/*                             <div class="form-group">*/
-/*                                 {{ form_label(form.haslo, 'Hasło:', {'label_attr': {'class': 'col-md-4 control-label '}}) }}*/
-/*                                 <div class="col-sm-8">*/
-/*                                     {{ form_widget(form.haslo, {'attr': {'class':'form-control' }}) }}*/
-/*                                     {{ form_errors(form.haslo) }}*/
-/*                                 </div>*/
-/*                             </div>*/
-/*                             <div class="form-group">*/
-/*                                 {{ form_label(form.imie, 'Imie:', {'label_attr': {'class': 'col-md-4 control-label '}}) }}*/
-/*                                 <div class="col-sm-8">*/
-/*                                     {{ form_widget(form.imie, {'attr': {'class':'form-control' }}) }}*/
-/*                                     {{ form_errors(form.imie) }}*/
-/*                                 </div>*/
-/*                             </div>*/
-/*                             <div class="form-group">*/
-/*                                 {{ form_label(form.nazwisko, 'Nazwisko:', {'label_attr': {'class': 'col-md-4 control-label '}}) }}*/
-/*                                 <div class="col-sm-8">*/
-/*                                     {{ form_widget(form.nazwisko, {'attr': {'class':'form-control'}}) }}*/
-/*                                     {{ form_errors(form.nazwisko) }}*/
-/*                                 </div>*/
-/*                             </div>*/
-/*                             <div class="form-group">*/
-/*                                 {{ form_label(form.dataurodzenia, 'Data urodzenia:', {'label_attr': {'class': 'col-md-4 control-label '}}) }}*/
-/*                                 <div class="col-sm-8">*/
-/*                                     {{ form_widget(form.dataurodzenia, {'attr': {'class':''}}) }}*/
-/*                                     {{ form_errors(form.dataurodzenia) }}*/
-/*                                 </div>*/
-/*                             </div>*/
-/*                             <div class="form-group">*/
-/*                                 {{ form_label(form.telefon, 'Numer telefonu:', {'label_attr': {'class': 'col-md-4 control-label '}}) }}*/
-/*                                 <div class="col-sm-8">*/
-/*                                     {{ form_widget(form.telefon, {'attr': {'class':'form-control'}}) }}*/
-/*                                     {{ form_errors(form.telefon) }}*/
-/*                                 </div>*/
-/*                             </div>*/
-/*                             <div class="row">*/
-/*                                 <button class="btn btn-lg btn-primary btn-block" type="submit">*/
-/*                                     Stwórz konto</button>*/
-/*                             </div>*/
+/*             <div class="col-sm-8 col-sm-offset-2">*/
+/*                 <div class="page-header">*/
+/*                     <h2>Rejestracja</h2>*/
+/*                 </div>*/
+/*                 {{ form_start(form, {'attr': {'class': 'form-horizontal', 'role': 'form', 'id':'defaultForm'}}) }}*/
+/*                 <div class="form-group">*/
+/*                     {{ form_label(form.imie, 'Imie i nazwisko:', {'label_attr': {'class': 'col-sm-3 control-label'}}) }}*/
+/*                     <div class="col-sm-4">*/
+/*                         {{ form_widget(form.imie, {'attr': {'class':'form-control', 'placeholder':'Imie' }}) }}*/
+/*                         {{ form_errors(form.imie) }}*/
+/*                     </div>*/
+/*                     <div class="col-sm-4">*/
+/*                         {{ form_label(form.nazwisko) }}*/
+/*                         {{ form_widget(form.nazwisko, {'attr': {'class':'form-control', 'placeholder':'Nazwisko'}}) }}*/
+/*                         {{ form_errors(form.nazwisko) }}*/
 /*                     </div>*/
 /*                 </div>*/
-/*          </div>*/
-/*         {{ form_end(form) }}*/
+/* */
+/*                 <div class="form-group">*/
+/*                     {{ form_label(form.nazwauzytkownika, 'Nazwa użytkownika:', {'label_attr': {'class': 'col-sm-3 control-label'}}) }}*/
+/*                     <div class="col-sm-5">*/
+/*                         {{ form_widget(form.nazwauzytkownika, {'attr': {'class':'form-control'}}) }}*/
+/*                         {{ form_errors(form.nazwauzytkownika) }}*/
+/*                     </div>*/
+/*                 </div>*/
+/* */
+/*                 <div class="form-group">*/
+/*                     {{ form_label(form.email, 'Adres Email:', {'label_attr': {'class': 'col-sm-3 control-label'}}) }}*/
+/*                     <div class="col-sm-5">*/
+/*                         {{ form_widget(form.email, {'attr': {'class':'form-control' }}) }}*/
+/*                         {{ form_errors(form.email) }}*/
+/*                     </div>*/
+/*                 </div>*/
+/* */
+/*                 <div class="form-group">*/
+/*                     {{ form_label(form.haslo, 'Hasło:', {'label_attr': {'class': 'col-sm-3 control-label'}}) }}*/
+/*                     <div class="col-sm-5">*/
+/*                         {{ form_widget(form.haslo, {'attr': {'class':'form-control' }}) }}*/
+/*                         {{ form_errors(form.haslo) }}*/
+/*                     </div>*/
+/*                 </div>*/
+/* */
+/*                 <div class="form-group">*/
+/*                     {{ form_label(form.telefon, 'Numer telefonu:', {'label_attr': {'class': 'col-sm-3 control-label'}}) }}*/
+/*                     <div class="col-sm-5">*/
+/*                         {{ form_widget(form.telefon, {'attr': {'class':'form-control' }}) }}*/
+/*                         {{ form_errors(form.telefon) }}*/
+/*                     </div>*/
+/*                 </div>*/
+/* */
+/*                 <div class="form-group">*/
+/*                     {{ form_label(form.captcha, ' ', {'label_attr': {'class': 'col-sm-3 control-label', 'id':'captchaOperation'}}) }}*/
+/*                     <div class="col-sm-2">*/
+/*                         {{ form_widget(form.captcha, {'attr': {'class':'form-control', 'id':'captchaOperation' }}) }}*/
+/*                         {{ form_errors(form.captcha) }}*/
+/*                     </div>*/
+/*                 </div>*/
+/* */
+/*                 <div class="form-group">*/
+/*                     <div class="col-sm-6 col-sm-offset-3">*/
+/*                         <div class="checkbox">*/
+/*                             {{ form_label(form.akceptacja, 'Akceptuje regulamin serwisu', {'label_attr': {'class': 'col-sm-3 control-label'}}) }}*/
+/*                             {{ form_widget(form.akceptacja, {'attr': {'class':'' }}) }}*/
+/*                             {{ form_errors(form.akceptacja) }}*/
+/*                         </div>*/
+/*                     </div>*/
+/*                 </div>*/
+/* */
+/*                 <div class="form-group">*/
+/*                     <div class="col-sm-9 col-sm-offset-3">*/
+/*                         <button type="submit" class="btn btn-primary btn-lg" name="signup" value="Sign up">Załóż konto</button>*/
+/*                     </div>*/
+/*                 </div>*/
+/*                 {{ form_end(form) }}*/
+/*             </div>*/
+/*         </div>*/
 /*     </div>*/
+/*     <script>*/
+/*         $(document).ready(function() {*/
+/*             // Generate a simple captcha*/
+/*             function randomNumber(min, max) {*/
+/*                 return Math.floor(Math.random() * (max - min + 1) + min);*/
+/*             };*/
+/*             $('#captchaOperation').html([randomNumber(1, 10), '+', randomNumber(1, 20), '='].join(' '));*/
+/* */
+/*             $('#defaultForm').formValidation({*/
+/*                 message: 'This value is not valid',*/
+/*                 icon: {*/
+/*                     valid: 'glyphicon glyphicon-ok',*/
+/*                     invalid: 'glyphicon glyphicon-remove',*/
+/*                     validating: 'glyphicon glyphicon-refresh'*/
+/*                 },*/
+/*                 fields: {*/
+/*                     captcha: {*/
+/*                         validators: {*/
+/*                             callback: {*/
+/*                                 message: 'Wrong answer',*/
+/*                                 callback: function(value, validator, $field) {*/
+/*                                     var items = $('#captchaOperation').html().split(' '), sum = parseInt(items[0]) + parseInt(items[2]);*/
+/*                                     return value == sum;*/
+/*                                 }*/
+/*                             }*/
+/*                         }*/
+/*                     },*/
+/*                     agree: {*/
+/*                         validators: {*/
+/*                             notEmpty: {*/
+/*                                 message: 'You must agree with the terms and conditions'*/
+/*                             }*/
+/*                         }*/
+/*                     }*/
+/*                 }*/
+/*             });*/
+/*         });*/
+/*     </script>*/
 /* {% endblock %}*/

@@ -17,8 +17,8 @@ class __TwigTemplate_341815fe94b64619489ffd1f7ddc2a4efc1a81cbc6f23d0fcabdc6b81f7
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_cc40285e50af19aa682edc61ba28dce64d9732fd9fc04b3778428f64d086c865 = $this->env->getExtension("native_profiler");
-        $__internal_cc40285e50af19aa682edc61ba28dce64d9732fd9fc04b3778428f64d086c865->enter($__internal_cc40285e50af19aa682edc61ba28dce64d9732fd9fc04b3778428f64d086c865_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "base.html.twig"));
+        $__internal_4d71f5c4d6b4676cf1b680ea8258a10e9f6f5ee6928a16a5a8fca29b57e04bc7 = $this->env->getExtension("native_profiler");
+        $__internal_4d71f5c4d6b4676cf1b680ea8258a10e9f6f5ee6928a16a5a8fca29b57e04bc7->enter($__internal_4d71f5c4d6b4676cf1b680ea8258a10e9f6f5ee6928a16a5a8fca29b57e04bc7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "base.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -53,12 +53,56 @@ class __TwigTemplate_341815fe94b64619489ffd1f7ddc2a4efc1a81cbc6f23d0fcabdc6b81f7
         }
         unset($context["asset_url"]);
         // line 13
+        echo "        ";
+        if (isset($context['assetic']['debug']) && $context['assetic']['debug']) {
+            // asset "c263a4c_0"
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_c263a4c_0") : $this->env->getExtension('asset')->getAssetUrl("_controller/css/c263a4c_part_1_bootstrap-datepicker_1.css");
+            // line 14
+            echo "        <link rel=\"stylesheet\" href=\"";
+            echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
+            echo "\" />
+        ";
+            // asset "c263a4c_1"
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_c263a4c_1") : $this->env->getExtension('asset')->getAssetUrl("_controller/css/c263a4c_part_1_bootstrap-datepicker.css_2.css");
+            echo "        <link rel=\"stylesheet\" href=\"";
+            echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
+            echo "\" />
+        ";
+        } else {
+            // asset "c263a4c"
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_c263a4c") : $this->env->getExtension('asset')->getAssetUrl("_controller/css/c263a4c.css");
+            echo "        <link rel=\"stylesheet\" href=\"";
+            echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
+            echo "\" />
+        ";
+        }
+        unset($context["asset_url"]);
+        // line 16
+        echo "        ";
+        if (isset($context['assetic']['debug']) && $context['assetic']['debug']) {
+            // asset "2858745_0"
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_2858745_0") : $this->env->getExtension('asset')->getAssetUrl("_controller/js/2858745_bootstrap-datepicker_1.js");
+            // line 17
+            echo "        <link rel=\"javascript\" href=\"";
+            echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
+            echo "\" />
+        ";
+        } else {
+            // asset "2858745"
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_2858745") : $this->env->getExtension('asset')->getAssetUrl("_controller/js/2858745.js");
+            echo "        <link rel=\"javascript\" href=\"";
+            echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
+            echo "\" />
+        ";
+        }
+        unset($context["asset_url"]);
+        // line 19
         echo "    </head>
     <body>
     ";
-        // line 15
+        // line 21
         $this->displayBlock('body', $context, $blocks);
-        // line 16
+        // line 22
         echo "
 
         <nav class=\"navbar navbar-default navbar-fixed-top\">
@@ -70,19 +114,19 @@ class __TwigTemplate_341815fe94b64619489ffd1f7ddc2a4efc1a81cbc6f23d0fcabdc6b81f7
                         <span class=\"icon-bar\"></span>
                     </button>
                     <a class=\"navbar-brand\" href=\"";
-        // line 26
+        // line 32
         echo $this->env->getExtension('routing')->getPath("StronaGlowna");
         echo "\">Cztery Ściany</a>
                 </div>
                 <div class=\"collapse navbar-collapse\" id=\"myNavbar\">
                     <ul class=\"nav navbar-nav navbar-right\">
                         <li><a href=\"";
-        // line 30
+        // line 36
         echo $this->env->getExtension('routing')->getPath("NoweOgloszenie");
         echo "\">DODAJ OGŁOSZENIE</a></li>
                         <li><a href=\"#\">PROFIL</a></li>
                         <li><a href=\"";
-        // line 32
+        // line 38
         echo $this->env->getExtension('routing')->getPath("Login");
         echo "\">ZALOGUJ</a></li>
                     </ul>
@@ -105,30 +149,30 @@ class __TwigTemplate_341815fe94b64619489ffd1f7ddc2a4efc1a81cbc6f23d0fcabdc6b81f7
 </html>
 ";
         
-        $__internal_cc40285e50af19aa682edc61ba28dce64d9732fd9fc04b3778428f64d086c865->leave($__internal_cc40285e50af19aa682edc61ba28dce64d9732fd9fc04b3778428f64d086c865_prof);
+        $__internal_4d71f5c4d6b4676cf1b680ea8258a10e9f6f5ee6928a16a5a8fca29b57e04bc7->leave($__internal_4d71f5c4d6b4676cf1b680ea8258a10e9f6f5ee6928a16a5a8fca29b57e04bc7_prof);
 
     }
 
     // line 5
     public function block_title($context, array $blocks = array())
     {
-        $__internal_1387f34bbeebe8e7c2ca4df9ada9eb7b0ab8cfa5b221905452831cbb29bbdae9 = $this->env->getExtension("native_profiler");
-        $__internal_1387f34bbeebe8e7c2ca4df9ada9eb7b0ab8cfa5b221905452831cbb29bbdae9->enter($__internal_1387f34bbeebe8e7c2ca4df9ada9eb7b0ab8cfa5b221905452831cbb29bbdae9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_9d0e3c1899f85094f9cd3849c7bb5246dd8ee38ef15a74f486487e946a92024a = $this->env->getExtension("native_profiler");
+        $__internal_9d0e3c1899f85094f9cd3849c7bb5246dd8ee38ef15a74f486487e946a92024a->enter($__internal_9d0e3c1899f85094f9cd3849c7bb5246dd8ee38ef15a74f486487e946a92024a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo "Cztery Ściany";
         
-        $__internal_1387f34bbeebe8e7c2ca4df9ada9eb7b0ab8cfa5b221905452831cbb29bbdae9->leave($__internal_1387f34bbeebe8e7c2ca4df9ada9eb7b0ab8cfa5b221905452831cbb29bbdae9_prof);
+        $__internal_9d0e3c1899f85094f9cd3849c7bb5246dd8ee38ef15a74f486487e946a92024a->leave($__internal_9d0e3c1899f85094f9cd3849c7bb5246dd8ee38ef15a74f486487e946a92024a_prof);
 
     }
 
-    // line 15
+    // line 21
     public function block_body($context, array $blocks = array())
     {
-        $__internal_8674c23755ec4bea91052e1e32532ead7dcb04f7f6c0f0defe7a27b516dfc1bd = $this->env->getExtension("native_profiler");
-        $__internal_8674c23755ec4bea91052e1e32532ead7dcb04f7f6c0f0defe7a27b516dfc1bd->enter($__internal_8674c23755ec4bea91052e1e32532ead7dcb04f7f6c0f0defe7a27b516dfc1bd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_76651b54a0b959643aba35347a29004ea6da74b1bc1ce27b72cebe242d26f80a = $this->env->getExtension("native_profiler");
+        $__internal_76651b54a0b959643aba35347a29004ea6da74b1bc1ce27b72cebe242d26f80a->enter($__internal_76651b54a0b959643aba35347a29004ea6da74b1bc1ce27b72cebe242d26f80a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         
-        $__internal_8674c23755ec4bea91052e1e32532ead7dcb04f7f6c0f0defe7a27b516dfc1bd->leave($__internal_8674c23755ec4bea91052e1e32532ead7dcb04f7f6c0f0defe7a27b516dfc1bd_prof);
+        $__internal_76651b54a0b959643aba35347a29004ea6da74b1bc1ce27b72cebe242d26f80a->leave($__internal_76651b54a0b959643aba35347a29004ea6da74b1bc1ce27b72cebe242d26f80a_prof);
 
     }
 
@@ -144,7 +188,7 @@ class __TwigTemplate_341815fe94b64619489ffd1f7ddc2a4efc1a81cbc6f23d0fcabdc6b81f7
 
     public function getDebugInfo()
     {
-        return array (  125 => 15,  113 => 5,  86 => 32,  81 => 30,  74 => 26,  62 => 16,  60 => 15,  56 => 13,  42 => 11,  38 => 10,  30 => 5,  24 => 1,);
+        return array (  169 => 21,  157 => 5,  130 => 38,  125 => 36,  118 => 32,  106 => 22,  104 => 21,  100 => 19,  86 => 17,  81 => 16,  61 => 14,  56 => 13,  42 => 11,  38 => 10,  30 => 5,  24 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -159,6 +203,12 @@ class __TwigTemplate_341815fe94b64619489ffd1f7ddc2a4efc1a81cbc6f23d0fcabdc6b81f7
 /*         {% stylesheets '@AppBundle/Resources/css/style.css*' filter='cssrewrite' %}*/
 /*         <link rel="stylesheet" href="{{ asset_url }}" />*/
 /*         {% endstylesheets %}*/
+/*         {% stylesheets '@AppBundle/Resources/public/plugins/bootstrap-datepicker-master/dist/css/bootstrap-datepicker.css*' filter='cssrewrite' %}*/
+/*         <link rel="stylesheet" href="{{ asset_url }}" />*/
+/*         {% endstylesheets %}*/
+/*         {% javascripts '@AppBundle/Resources/public/plugins/bootstrap-datepicker-master/dist/js/bootstrap-datepicker.js' %}*/
+/*         <link rel="javascript" href="{{ asset_url }}" />*/
+/*         {% endjavascripts %}*/
 /*     </head>*/
 /*     <body>*/
 /*     {% block body %}{% endblock %}*/

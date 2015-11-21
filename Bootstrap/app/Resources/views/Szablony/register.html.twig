@@ -19,12 +19,12 @@
                 <div class="form-group">
                     {{ form_label(form.imie, 'Imie i nazwisko:', {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
                     <div class="col-sm-4">
-                        {{ form_widget(form.imie, {'attr': {'class':'form-control' }}) }}
+                        {{ form_widget(form.imie, {'attr': {'class':'form-control', 'placeholder':'Imie' }}) }}
                         {{ form_errors(form.imie) }}
                     </div>
                     <div class="col-sm-4">
                         {{ form_label(form.nazwisko) }}
-                        {{ form_widget(form.nazwisko, {'attr': {'class':'form-control'}}) }}
+                        {{ form_widget(form.nazwisko, {'attr': {'class':'form-control', 'placeholder':'Nazwisko'}}) }}
                         {{ form_errors(form.nazwisko) }}
                     </div>
                 </div>
@@ -64,7 +64,7 @@
                 <div class="form-group">
                     {{ form_label(form.captcha, ' ', {'label_attr': {'class': 'col-sm-3 control-label', 'id':'captchaOperation'}}) }}
                     <div class="col-sm-2">
-                        {{ form_widget(form.captcha, {'attr': {'class':'form-control' }}) }}
+                        {{ form_widget(form.captcha, {'attr': {'class':'form-control', 'id':'captchaOperation' }}) }}
                         {{ form_errors(form.captcha) }}
                     </div>
                 </div>
@@ -72,7 +72,7 @@
                 <div class="form-group">
                     <div class="col-sm-6 col-sm-offset-3">
                         <div class="checkbox">
-                            {{ form_label(form.akceptacja, 'Akceptuje regulamin serwisu', {'label_attr': {'class': 'col-sm-3 control-label', 'id':'captchaOperation'}}) }}
+                            {{ form_label(form.akceptacja, 'Akceptuje regulamin serwisu', {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
                             {{ form_widget(form.akceptacja, {'attr': {'class':'' }}) }}
                             {{ form_errors(form.akceptacja) }}
                         </div>
@@ -94,7 +94,7 @@
             function randomNumber(min, max) {
                 return Math.floor(Math.random() * (max - min + 1) + min);
             };
-            $('#captchaOperation').html([randomNumber(1, 100), '+', randomNumber(1, 200), '='].join(' '));
+            $('#captchaOperation').html([randomNumber(1, 10), '+', randomNumber(1, 20), '='].join(' '));
 
             $('#defaultForm').formValidation({
                 message: 'This value is not valid',
@@ -104,67 +104,6 @@
                     validating: 'glyphicon glyphicon-refresh'
                 },
                 fields: {
-                    firstName: {
-                        row: '.col-sm-4',
-                        validators: {
-                            notEmpty: {
-                                message: 'The first name is required'
-                            }
-                        }
-                    },
-                    lastName: {
-                        row: '.col-sm-4',
-                        validators: {
-                            notEmpty: {
-                                message: 'The last name is required'
-                            }
-                        }
-                    },
-                    username: {
-                        message: 'The username is not valid',
-                        validators: {
-                            notEmpty: {
-                                message: 'The username is required'
-                            },
-                            stringLength: {
-                                min: 6,
-                                max: 30,
-                                message: 'The username must be more than 6 and less than 30 characters long'
-                            },
-                            regexp: {
-                                regexp: /^[a-zA-Z0-9_\.]+$/,
-                                message: 'The username can only consist of alphabetical, number, dot and underscore'
-                            }
-                        }
-                    },
-                    email: {
-                        validators: {
-                            notEmpty: {
-                                message: 'The email address is required'
-                            },
-                            emailAddress: {
-                                message: 'The input is not a valid email address'
-                            }
-                        }
-                    },
-                    password: {
-                        validators: {
-                            notEmpty: {
-                                message: 'The password is required'
-                            },
-                            different: {
-                                field: 'username',
-                                message: 'The password cannot be the same as username'
-                            }
-                        }
-                    },
-                    gender: {
-                        validators: {
-                            notEmpty: {
-                                message: 'The gender is required'
-                            }
-                        }
-                    },
                     captcha: {
                         validators: {
                             callback: {

@@ -10,9 +10,15 @@ class NoweOgloszenie extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('wolneod', 'text', array(
-                        'label' => '',
-                ))
+        $builder->add('wolneod', 'datetime', array(
+                'widget' => 'single_text',
+                'format' => 'dd-MM-yyyy',
+                'attr' => array(
+                    'class' => 'form-control input-inline datepicker',
+                    'data-provide' => 'datepicker',
+                    'data-date-format' => 'dd-mm-yyyy'
+                    )))
+
                 ->add('miasto', 'text', array(
 
                 ))
