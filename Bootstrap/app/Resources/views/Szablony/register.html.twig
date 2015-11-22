@@ -17,9 +17,9 @@
                 </div>
                 {{ form_start(form, {'attr': {'class': 'form-horizontal', 'role': 'form', 'id':'defaultForm'}}) }}
                 <div class="form-group">
-                    {{ form_label(form.imie, 'Imie i nazwisko:', {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+                    {{ form_label(form.imie, 'Imię i nazwisko:', {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
                     <div class="col-sm-4">
-                        {{ form_widget(form.imie, {'attr': {'class':'form-control', 'placeholder':'Imie' }}) }}
+                        {{ form_widget(form.imie, {'attr': {'class':'form-control', 'placeholder':'Imię' }}) }}
                         {{ form_errors(form.imie) }}
                     </div>
                     <div class="col-sm-4">
@@ -62,9 +62,9 @@
                 </div>
 
                 <div class="form-group">
-                    {{ form_label(form.captcha, ' ', {'label_attr': {'class': 'col-sm-3 control-label', 'id':'captchaOperation'}}) }}
-                    <div class="col-sm-2">
-                        {{ form_widget(form.captcha, {'attr': {'class':'form-control', 'id':'captchaOperation' }}) }}
+                    {{ form_label(form.captcha) }}
+                    <div class="col-sm-4 col-sm-offset-3">
+                        {{ form_widget(form.captcha,  {'attr': {'class':'form-control' }}) }}
                         {{ form_errors(form.captcha) }}
                     </div>
                 </div>
@@ -88,42 +88,4 @@
             </div>
         </div>
     </div>
-    <script>
-        $(document).ready(function() {
-            // Generate a simple captcha
-            function randomNumber(min, max) {
-                return Math.floor(Math.random() * (max - min + 1) + min);
-            };
-            $('#captchaOperation').html([randomNumber(1, 10), '+', randomNumber(1, 20), '='].join(' '));
-
-            $('#defaultForm').formValidation({
-                message: 'This value is not valid',
-                icon: {
-                    valid: 'glyphicon glyphicon-ok',
-                    invalid: 'glyphicon glyphicon-remove',
-                    validating: 'glyphicon glyphicon-refresh'
-                },
-                fields: {
-                    captcha: {
-                        validators: {
-                            callback: {
-                                message: 'Wrong answer',
-                                callback: function(value, validator, $field) {
-                                    var items = $('#captchaOperation').html().split(' '), sum = parseInt(items[0]) + parseInt(items[2]);
-                                    return value == sum;
-                                }
-                            }
-                        }
-                    },
-                    agree: {
-                        validators: {
-                            notEmpty: {
-                                message: 'You must agree with the terms and conditions'
-                            }
-                        }
-                    }
-                }
-            });
-        });
-    </script>
 {% endblock %}

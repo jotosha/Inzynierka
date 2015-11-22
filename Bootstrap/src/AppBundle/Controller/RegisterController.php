@@ -19,6 +19,7 @@ class RegisterController extends Controller
         $task = new RegisterEntity();
 
         $form = $this->createForm(new Register());
+        $form->bind($this->getRequest());
 
         return $this->render(':Szablony:register.html.twig', array(
             'form' => $form->createView(),

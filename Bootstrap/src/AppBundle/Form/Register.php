@@ -23,13 +23,18 @@ class Register extends AbstractType
             ))
             ->add('telefon', 'number', array(
             ))
-            ->add('captcha', 'text', array(
-            ))
             ->add('akceptacja', 'checkbox', array(
                 'label' => 'Akceptuje regulamin serwisu',
                 'label_attr' => array(
                     'class' => 'checkbox-inline'
                 )
+            ))
+            ->add('captcha', 'captcha', array(
+                'label' => ' ',
+                'width' => 200,
+                'height' => 50,
+                'length' => 6,
+                'invalid_message' => 'The captcha code is invalid.'
             ));
     }
 
